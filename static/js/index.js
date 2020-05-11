@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             containerElement.innerHTML = contents[url];
 
             await loadJsFile(url);
+            await loadCssFile(url);
         }
     });
 });
@@ -70,4 +71,22 @@ async function loadJsFile(fileName) {
     await script.setAttribute('src', `./static/js/${fileName}.js`);
 
     return body.appendChild(script);
+}
+
+async function loadCssFile(fileName) {
+    const className = 'addedCss';
+    const head = document.getElementsByTagName('head')[0];
+
+    const styles = document.querySelectorAll(`.${className}`);
+    styles.forEach((style) => {
+        head.removeChild(style);
+    });
+
+    let link = await document.createElement('link');
+    link.className = className;
+    await link.setAttribute('type', 'text/css');
+    await link.setAttribute('href', `./static/css/${fileName}.css`);
+    await link.setAttribute('rel', 'stylesheet');
+
+    return head.appendChild(link);
 }
