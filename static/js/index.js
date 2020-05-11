@@ -16,14 +16,26 @@ const funAndGames = `
     <div class="numbers thumbnail">
         <span>1</span><span>2</span><span>3</span>
     </div>
-    <a class="appLink" data-url="numberGame" href="#"></a>
-    <p>Numbers Lesson</p>
+    <a class="appLink" data-url="numberGame"></a>
+    <p>Numbers Game</p>
 </div>
 </div>`;
 
 const numberGame = `<div id="numberGame"><div id="number">1</div></div>`;
 
-const myProfile = `<p>My Profile</p>`;
+const myProfile = `<div id="profile"><div class="card">
+<img src="./static/images/profile.jpg" alt="John" style="width:100%">
+<h1>Dominic Bett</h1>
+<p class="title">Full Stack Software Engineer</p>
+<p>Andela & Ceros</p>
+<div style="margin: 24px 0;">
+  <a href="#"><i class="fa fa-google"></i></a>
+  <a href="https://twitter.com/bettdominic001"><i class="fa fa-twitter"></i></a>  
+  <a href="https://www.linkedin.com/in/dominic-bett-a6430a125"><i class="fa fa-linkedin"></i></a>  
+  <a href="#"><i class="fa fa-facebook"></i></a>
+</div>
+<p><button><a><i class="fa fa-phone"></i></a> Contact</button></p>
+</div></div>`;
 
 const myWork = `<p>My Work</p>`;
 
@@ -41,6 +53,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     navElement.innerHTML = nav;
     containerElement.innerHTML = contents['myProfile'];
+    loadJsFile('myProfile');
+    loadCssFile('myProfile');
 
     await document.addEventListener('click', async (event) => {
         if (event.target.className === 'appLink') {

@@ -1,0 +1,121 @@
+:root {
+    --app-green: green;
+}
+
+#profile .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+#profile .title {
+    color: grey;
+    font-size: 18px;
+}
+
+#profile button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#profile button:hover {
+    background-color: var(--app-green);
+}
+
+#profile a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+#profile button a {
+    color: inherit;
+}
+
+#profile button:hover {
+    background-color: var(--app-green);
+}
+
+#profile button:hover a {
+    animation: shake 0.3s infinite;
+    animation-timing-function: linear;
+    color: white;
+}
+
+#profile a:hover {
+    color: var(--app-green);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    animation: shake 1.5s infinite;
+    -webkit-animation: shake 1.5s infinite;
+    -moz-animation: shake 1.5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes shake {
+    0% {
+        transform: 0;
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@-webkit-keyframes shake {
+    0% {
+        transform: 0;
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@-moz-keyframes bounce {
+    0% {
+        transform: 0;
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
