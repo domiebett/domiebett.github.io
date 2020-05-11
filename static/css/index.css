@@ -12,6 +12,10 @@ a, a:hover {
     text-decoration: none;
 }
 
+.appLink {
+    cursor: pointer;
+}
+
 /* Navigation */
 nav {
     position: absolute;
@@ -65,18 +69,20 @@ nav ul {
 }
 
 /* Container */
-.container {
-    margin: 0 var(--nav-side-margin);
+#container {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: var(--nav-side-margin);
+    margin-right: var(--nav-side-margin);
 }
 
-.container .links {
-    margin-top: 100px;
+#container .links {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
 }
 
-.container .links>div {
+#container .links>div {
     position: relative;
     display: block;
     width: 200px;
@@ -90,12 +96,12 @@ nav ul {
     transition-timing-function: ease-in-out;
 }
 
-.container .links>div:hover {
+#container .links>div:hover {
     color: green;
     transform: scale(1.02);
 }
 
-.container .links>div p {
+#container .links>div p {
     position: absolute;
     display: block;
     width: 100%;
@@ -106,7 +112,7 @@ nav ul {
     color: inherit;
 }
 
-.container .links>div a {
+#container .links>div a {
     position: absolute;
     display: block;
     width: 100%;
@@ -119,7 +125,7 @@ nav ul {
     color: inherit;
 }
 
-.container .links>div .thumbnail {
+#container .links>div .thumbnail {
     width: 100%;
     /* height: 80%; */
     margin: 0 auto;
@@ -130,14 +136,29 @@ nav ul {
     color: black;
 }
 
-.container .links>div .numbers.thumbnail span:nth-child(1) {
+#container .links>div .numbers.thumbnail span:nth-child(1) {
     color: red;
 }
 
-.container .links>div .numbers.thumbnail span:nth-child(2) {
+#container .links>div .numbers.thumbnail span:nth-child(2) {
     color: blue;
 }
 
-.container .links>div .numbers.thumbnail span:nth-child(3) {
+#container .links>div .numbers.thumbnail span:nth-child(3) {
     color: green;
+}
+
+/* Number Game */
+#number {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    vertical-align: center;
+    margin-top: calc(50vh - 150px);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 200px;
+    font-weight: bolder;
+    font-family: fantasy;
+    color: black;
 }

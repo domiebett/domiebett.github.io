@@ -1,5 +1,3 @@
-let numberHolder = document.getElementById('number');
-let body = document.querySelector('body');
 let number = 1;
 let bgColors = {
     blue: 'white',
@@ -24,9 +22,14 @@ document.addEventListener('keydown', (event) => {
 });
 
 function displayNumber() {
+    let numberHolder = document.getElementById('number');
+    let container = document.getElementById('numberGame');
+
     numberHolder.innerHTML = number;
+
     let randomNumber = Math.floor(Math.random() * Object.keys(bgColors).length);
     let randomColor = Object.keys(bgColors)[randomNumber]
-    body.style.backgroundColor = randomColor;
+
+    container.style.backgroundColor = randomColor;
     numberHolder.style.color = bgColors[randomColor];
 }
