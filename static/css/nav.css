@@ -12,7 +12,7 @@ nav {
     font-family: cursive;
 }
 
-nav li:hover {
+nav li:hover,nav li.active {
     color: green;
     text-decoration: underline;
 }

@@ -31,19 +31,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 async function loadContent(content) {
-    if (currentUrl !== content) {
-        currentUrl = content;
-    } else {
-        return;
-    }
+    // dont load if we are on the current url.
+    if (currentUrl === content)
+        return
     
+    currentUrl = content;
     const container = await document.getElementById('container');
 
     container.innerHTML = await loadHtmlFile(content);
     await setupIframeClick();
     await loadJsInIframe(content);
 
-    await document.getElementsByTagName('iframe').focus();
+    $('.appLink').removeClass('active');
+    $(`.appLink[data-url="${content}"]`).addClass('active');
 }
 
 async function loadHtmlFile(fileName) {
