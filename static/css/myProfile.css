@@ -2,9 +2,21 @@
     --app-green: green;
 }
 
+#profile {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+#profile p {
+    margin: 0;
+    padding: 0;
+}
+
 #profile .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
+    min-width: 300px;
     text-align: center;
     font-family: arial;
     transition-duration: 0.3s;
@@ -64,6 +76,56 @@
     -webkit-animation: shake 1.5s infinite;
     -moz-animation: shake 1.5s infinite;
     animation-timing-function: linear;
+}
+
+#profile .content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-left: 50px;
+    min-width: 400px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#profile .content section {
+    min-width: 50%;
+    max-width: 50%;
+}
+
+#profile .content h2 {
+    color: var(--app-green);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#profile .content h2 .underline {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--app-green);
+    border-radius: 2.5px;
+}
+
+#profile .content .info {
+    min-width: 100%;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 30% 10% 50%;
+}
+
+#profile .content label {
+    font-weight: bold;
+}
+
+#profile .content ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+
+#profile .content ul li {
+    list-style-type: circle;
+    margin: 10px 0;
 }
 
 @keyframes shake {
