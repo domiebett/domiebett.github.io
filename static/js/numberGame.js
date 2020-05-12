@@ -23,7 +23,7 @@ document.addEventListener('keydown', (event) => {
 
 function displayNumber() {
     let numberHolder = document.getElementById('number');
-    let container = document.getElementById('numberGame');
+    let container = document.querySelector('body');
 
     numberHolder.innerHTML = number;
 

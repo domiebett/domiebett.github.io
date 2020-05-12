@@ -10,51 +10,14 @@ Dominic Bett
 </ul>
 </section>`;
 
-const funAndGames = `
-<div class="links">
-<div>
-    <div class="numbers thumbnail">
-        <span>1</span><span>2</span><span>3</span>
-    </div>
-    <a class="appLink" data-url="numberGame"></a>
-    <p>Numbers Game</p>
-</div>
-</div>`;
-
-const numberGame = `<div id="numberGame"><div id="number">1</div></div>`;
-
-const myProfile = `<div id="profile"><div class="card">
-<img src="./static/images/profile.jpg" alt="John" style="width:100%">
-<h1>Dominic Bett</h1>
-<p class="title">Full Stack Software Engineer</p>
-<p>Andela & Ceros</p>
-<div style="margin: 24px 0;">
-  <a href="#"><i class="fa fa-google"></i></a>
-  <a href="https://twitter.com/bettdominic001"><i class="fa fa-twitter"></i></a>  
-  <a href="https://www.linkedin.com/in/dominic-bett-a6430a125"><i class="fa fa-linkedin"></i></a>  
-  <a href="#"><i class="fa fa-facebook"></i></a>
-</div>
-<p><button><a><i class="fa fa-phone"></i></a> Contact</button></p>
-</div></div>`;
-
-const myWork = `<p>My Work</p>`;
-
+let currentUrl;
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const containerElement = await document.getElementById('container');
     const navElement = await document.getElementById('navigation');
-
-    const contents = {
-        myProfile: myProfile,
-        myWork: myWork,
-        funAndGames: funAndGames,
-        numberGame: numberGame
-    };
-    
     navElement.innerHTML = nav;
-    containerElement.innerHTML = contents['myProfile'];
-    loadJsFile('myProfile');
-    loadCssFile('myProfile');
+
+    let homePage = 'myProfile';
+    loadContent(homePage);
 
     await document.addEventListener('click', async (event) => {
         if (event.target.className === 'appLink') {
@@ -62,13 +25,51 @@ document.addEventListener('DOMContentLoaded', async () => {
             event.stopPropagation();
 
             let url = event.target.dataset.url;
-            containerElement.innerHTML = contents[url];
-
-            await loadJsFile(url);
-            await loadCssFile(url);
+            loadContent(url);
         }
     });
 });
+
+async function loadContent(content) {
+    if (currentUrl !== content) {
+        currentUrl = content;
+    } else {
+        return;
+    }
+    
+    const container = await document.getElementById('container');
+
+    container.innerHTML = await loadHtmlFile(content);
+    await setupIframeClick();
+    await loadJsInIframe(content);
+
+    await document.getElementsByTagName('iframe').focus();
+}
+
+async function loadHtmlFile(fileName) {
+    return `<iframe type="text/html" src="./static/html/${fileName}.html"></iframe>`;
+}
+
+async function setupIframeClick(container) {
+    $('iframe').on('load', () => {
+        let iframe = $('iframe').contents();
+
+        iframe.find('.appLink').on('click', (event) => {
+            loadContent(event.target.dataset.url);
+        });
+    });
+}
+
+async function loadJsInIframe(url) {
+    $('iframe').on('load',async () => {
+        let iframe = $('iframe').contents();
+
+        let script = await document.createElement('script');
+        await script.setAttribute('src', `./../js/${url}.js`);
+        await script.setAttribute('type', 'text/javascript');
+        iframe.find('body').append(script);
+    });
+}
 
 async function loadJsFile(fileName) {
     const className = 'addedJs';
