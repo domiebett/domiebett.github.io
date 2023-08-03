@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    transition: all 0.5s;
     user-select: none;
 }
 
@@ -16,4 +15,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100vw;
   height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+.no-style-button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+.MainComponent {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  padding: 10%;
+  transition: opacity 0.5s ease-in-out;
 }
