@@ -1,4 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
+import Socials from './Socials';
 
 const Description = () => {
   const delay = 1500;
@@ -15,9 +16,10 @@ const Description = () => {
   return (
     <div className="Description">
       I am a :
-      <div className='animated-type'>
+      <div className="animated-type">
         <TypeAnimation sequence={sequence} speed={speed} repeat={Infinity} />
       </div>
+      <Socials />
     </div>
   );
 };

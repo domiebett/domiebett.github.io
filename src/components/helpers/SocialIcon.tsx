@@ -4,7 +4,7 @@ import './SocialIcon.scss';
 const SocialsIcon = ({ iconName, link }: Props) => {
   const icon = SocialsIcons[iconName];
   return (
-    <button className='SocialsIcon'>
+    <button className='SocialIcon'>
       <img src={icon} alt="" />
     </button>
   );
