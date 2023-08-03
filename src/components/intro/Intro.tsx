@@ -1,5 +1,6 @@
-import AboutMe from './AboutMe';
-import Pic from './Pic';
+import AboutMe from './about-me/AboutMe';
+import Pic from './pic/Pic';
+import './Intro.scss';
 
 const Intro = () => {
   return (
