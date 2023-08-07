@@ -1,4 +1,7 @@
-const Experience = () => {
+import { ViewProps } from '../IView';
+import './Experience.scss';
+
+const Experience = ({active}: ViewProps) => {
   return (
     <div className="Experience">
       This is my Experience.

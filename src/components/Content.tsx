@@ -1,12 +1,28 @@
-import {  createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import './Content.scss';
-import Experience from './experience/Experience';
+import Experience from './my-info/Experience/Experience';
 import Intro from './intro/Intro';
 import Socials from './intro/about-me/Socials/Socials';
 import { ScreenSizeContext } from 'contexts/Contexts';
+import MyInfo from './my-info/MyInfo';
 
 const Content = () => {
   const [screenSize, setScreenSize] = useState('Desktop');
+  const breakPoint = 700;
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, [screenSize, breakPoint]);
+
+  const handleResize = (evt: UIEvent) => {
+    if (window.innerWidth <= breakPoint && screenSize !== 'Mobile') {
+      setScreenSize('Mobile');
+    } else if (window.innerWidth > breakPoint && screenSize !== 'Desktop') {
+      setScreenSize('Desktop');
+    }
+  };
 
   return (
     <ScreenSizeContext.Provider value={screenSize}>
@@ -15,7 +31,7 @@ const Content = () => {
           <Intro />
         </div>
         <div className="Panel">
-          <Experience />
+          <MyInfo />
         </div>
       </div>
       <div className="Footer">

@@ -1,5 +1,7 @@
-$background: #0a1a44;
-$app-secondary: #0a1a44;
+// $background: #0a1a44;
+$background: #000;
+// $app-secondary: #0a1a44;
+$app-secondary: #000;
 $app-primary: #fff;
 
 // text
@@ -20,6 +22,15 @@ $button-border-width: 2px;
   border-width: $button-border-width;
   border-color: $button-border-color;
   border-style: solid;
+}
+
+.app-button-hover {
+  @extend .app-button;
+
+  &:hover {
+    color: $app-secondary;
+    background-color: $app-primary;
+  }
 }
 
 .no-style-button {
