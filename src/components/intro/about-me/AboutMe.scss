@@ -6,8 +6,8 @@
   width: 60%;
 
   .Logo {
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 75px;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,7 +16,7 @@
 
     .name {
       font-family: Arial, sans-serif;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #ffffff;
     }
 
@@ -26,18 +26,18 @@
   }
 
   .Description {
-    font-size: 5rem;
+    font-size: 2rem;
     color: white;
 
     .animated-type {
-      font-size: 7rem;
+      font-size: 4rem;
     }
   }
 
   .DownloadCv {
     button {
-      padding: 20px;
-      font-size: 4rem;
+      padding: 10px;
+      font-size: 2rem;
       color: white;
       border: 2px solid white;
       border-radius: 60px;
