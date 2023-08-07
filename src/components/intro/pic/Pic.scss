@@ -1,5 +1,9 @@
 .Pic {
-    width: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    height: 100vh;
 
     img {
         width: 100%;
