@@ -1,3 +1,5 @@
+import './Logo.scss';
+
 import { DLogo } from "assets/icons";
 
 const Logo = () => {

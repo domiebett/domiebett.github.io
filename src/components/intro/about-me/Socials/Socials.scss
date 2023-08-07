@@ -1,4 +1,9 @@
 .Socials {
+  position: relative;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
   .icons {
     display: inline-flex;
     flex-direction: row;

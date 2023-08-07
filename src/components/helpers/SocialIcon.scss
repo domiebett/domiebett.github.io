@@ -1,11 +1,9 @@
+@import "./../../styles/variables.scss";
+
 .SocialIcon {
+    @extend .no-style-button;
     height: 20px;
     width: 20px;
-    background: none;
-    padding: 0;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
 
     img {
         width: 100%;

@@ -1,0 +1,32 @@
+$background: #0a1a44;
+$app-secondary: #0a1a44;
+$app-primary: #fff;
+
+// text
+$text-color: $app-primary;
+
+// buttons
+$button-border-color: $app-primary;
+$button-text: $app-primary;
+$button-border-width: 2px;
+
+.button {
+  color: $button-text;
+  cursor: pointer;
+}
+
+.app-button {
+  @extend .button;
+  border-width: $button-border-width;
+  border-color: $button-border-color;
+  border-style: solid;
+}
+
+.no-style-button {
+  @extend .button;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  text-decoration: none;
+}

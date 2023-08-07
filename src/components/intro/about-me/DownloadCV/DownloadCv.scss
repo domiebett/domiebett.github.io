@@ -1,0 +1,27 @@
+@import './../../../../styles/variables.scss';
+
+.DownloadCVButton {
+  @extend .app-button;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 60px;
+  background: none;
+}
+
+.DownloadCV {
+  &.Desktop {
+    button {
+      @extend .DownloadCVButton;
+      width: 60%;
+      min-width: 400px;
+    }
+  }
+
+  &.Mobile {
+    button {
+      @extend .DownloadCVButton;
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+}

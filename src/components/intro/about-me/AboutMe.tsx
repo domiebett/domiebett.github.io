@@ -1,7 +1,8 @@
 import './AboutMe.scss';
-import Description from './Description';
-import DownloadCV from './DownloadCV';
-import Logo from './Logo';
+import Description from './Description/Description';
+import DownloadCV from './DownloadCV/DownloadCV';
+import Logo from './Logo/Logo';
+
 
 const AboutMe = () => {
   return (
