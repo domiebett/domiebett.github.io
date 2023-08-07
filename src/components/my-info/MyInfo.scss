@@ -1,3 +1,20 @@
+@import './../../styles/variables.scss';
+
 .MyInfo {
-    
+    position: relative;
+    height: 100%;
+    border-color: $app-tertiary;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 0 0 15px 15px;
+
+    .Views {
+        &>div {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            transition: $fast-opacity-transition;
+        }
+    }
 }

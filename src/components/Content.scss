@@ -1,3 +1,5 @@
+@import '../styles/variables.scss';
+
 .Content {
   &.Desktop {
     display: grid;
@@ -13,14 +15,16 @@
   }
 
   &.Mobile {
+    box-sizing: border-box;
     width: 95%;
     height: 100%;
     padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     overflow-x: hidden;
     overflow-y: scroll;
+
+    .Panel {
+      height: 100%;
+    }
   }
 }
 
@@ -30,4 +34,5 @@
   bottom: 0;
   left: 0;
   width: 100vw;
+  background-color: $background;
 }

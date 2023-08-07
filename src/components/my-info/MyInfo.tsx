@@ -21,12 +21,20 @@ const MyInfo = () => {
 
   return (
     <div className="MyInfo">
-      <Switcher titles={views.map((view) => view.title)} />
+      <Switcher
+        setActiveView={(activeView: string) => setActiveView(activeView)}
+        activeView={activeView}
+        titles={views.map((view) => view.title)}
+      />
 
       <div className="Views">
-        {views.map(({ title, view: View }, index) => (
-          <View key={index} active={activeView === title} />
-        ))}
+        {views.map(({ title, view: View }, index) => {
+          const style = {
+            visibility: activeView === title ? 'visible' : 'hidden',
+            opacity: activeView === title ? 1 : 0,
+          };
+          return <View key={index} styles={style} />;
+        })}
       </div>
     </div>
   );

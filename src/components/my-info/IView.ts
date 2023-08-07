@@ -1,3 +1,3 @@
 export interface ViewProps {
-  active: boolean;
+  styles: Record<string, string | number>;
 }

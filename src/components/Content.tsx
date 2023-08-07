@@ -8,7 +8,7 @@ import MyInfo from './my-info/MyInfo';
 
 const Content = () => {
   const [screenSize, setScreenSize] = useState('Desktop');
-  const breakPoint = 700;
+  const breakPoint = 1000;
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);

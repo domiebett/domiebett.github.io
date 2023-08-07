@@ -1,9 +1,9 @@
 import { ViewProps } from '../IView';
 import './Skills.scss';
 
-const Skills = ({active}: ViewProps) => {
+const Skills = ({styles}: ViewProps) => {
     return (
-        <div className="Skills">
+        <div style={styles} className="Skills">
             I am also very skilled.
         </div>
     )

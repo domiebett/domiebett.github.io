@@ -1,0 +1,23 @@
+@import './../../../styles/variables.scss';
+
+.Switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+
+  .Switches {
+    @extend .app-button-hover;
+    border-color: $app-tertiary;
+    background: none;
+    color: $app-primary;
+    padding: 10px;
+    width: calc(100% / 3);
+    transition: $fast-transition;
+
+    &.active {
+      background-color: $app-primary;
+      color: $app-secondary;
+    }
+  }
+}
