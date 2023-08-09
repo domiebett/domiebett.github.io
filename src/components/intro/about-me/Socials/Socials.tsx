@@ -1,5 +1,5 @@
 import { IconName } from 'assets/icons';
-import SocialIcon from 'components/helpers/SocialIcon';
+import SocialIcon from 'components/helpers/SocialIcon/SocialIcon';
 
 import './Socials.scss';
 

@@ -4,15 +4,18 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  gap: 10px;
   width: 100%;
+  margin: 20px 0 0 20px;
 
   .Switches {
     @extend .app-button-hover;
     border-color: $app-tertiary;
+    border-radius: 20px;
     background: none;
     color: $app-primary;
     padding: 10px;
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     transition: $fast-transition;
 
     &.active {

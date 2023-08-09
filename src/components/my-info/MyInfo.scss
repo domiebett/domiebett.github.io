@@ -1,19 +1,24 @@
 @import './../../styles/variables.scss';
 
+$view-container-top: 75px;
+$view-border-width: 10px;
+$view-border-radius: 15px;
+
 .MyInfo {
     position: relative;
     height: 100%;
     border-color: $app-tertiary;
-    border-width: 10px;
+    border-width: $view-border-width;
     border-style: solid;
-    border-radius: 0 0 15px 15px;
+    border-radius: $view-border-radius;
 
     .Views {
-        &>div {
+        .View-container {
             position: absolute;
-            top: 50px;
+            top: $view-container-top;
             left: 0;
             width: 100%;
+            height: calc(100% - $view-container-top);
             transition: $fast-opacity-transition;
         }
     }

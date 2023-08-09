@@ -29,11 +29,18 @@ const MyInfo = () => {
 
       <div className="Views">
         {views.map(({ title, view: View }, index) => {
-          const style = {
-            visibility: activeView === title ? 'visible' : 'hidden',
-            opacity: activeView === title ? 1 : 0,
-          };
-          return <View key={index} styles={style} />;
+          return (
+            <div
+              key={index}
+              style={{
+                visibility: activeView === title ? 'visible' : 'hidden',
+                opacity: activeView === title ? 1 : 0,
+              }}
+              className="View-container"
+            >
+              <View />
+            </div>
+          );
         })}
       </div>
     </div>
