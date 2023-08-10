@@ -2,6 +2,15 @@
   font-size: 2rem;
 
   .animated-type {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+
+  &.Mobile {
+    font-size: 2rem;
+    .animated-type {
+      display: grid;
+      grid-template-rows:max-content;
+      font-size: 4rem;
+    }
   }
 }

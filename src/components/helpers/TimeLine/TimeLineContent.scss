@@ -4,26 +4,37 @@ $timeline-offset: 15%;
 $content-container-width: 45%;
 
 .TimeLineContent {
-  padding: 20px 20px;
-  position: relative;
-  background-color: $app-secondary;
-  width: $content-container-width;
-  margin-bottom: 20px;
-  box-sizing: border-box;
+  .content {
+    background-color: $app-secondary;
+    position: relative;
+    border-radius: 6px;
+
+    .description {
+      opacity: 0.8;
+    }
+  }
 
   .date {
     color: $app-primary;
     opacity: 0.7;
   }
+  
+  padding: 0 20px;
+  position: relative;
+  background-color: $app-secondary;
+  box-sizing: border-box;
 
-  &:nth-child(1) {
-    top: 20px;
-  }
+  &.Desktop {
+    width: $content-container-width;
 
-  &.right {
-    left: 55%;
+    &:nth-child(1) {
+      top: 20px;
+    }
 
-    &::after {
+    &.right {
+      left: 55%;
+
+      &::after {
         content: '';
         position: absolute;
         right: 100%;
@@ -32,31 +43,27 @@ $content-container-width: 45%;
         height: 4px;
         width: 5%;
         background-color: $app-primary;
+      }
+    }
+
+    &.left {
+      text-align: right;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        display: block;
+        height: 4px;
+        width: 5%;
+        background-color: $app-primary;
+      }
     }
   }
 
-  &.left {
-    text-align: right;
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: 100%;
-      top: 50%;
-      display: block;
-      height: 4px;
-      width: 5%;
-      background-color: $app-primary;
-    }
-  }
-
-  .content {
-    background-color: $app-secondary;
-    position: relative;
-    border-radius: 6px;
-
-    .description {
-        opacity: 0.8;
-    }    
+  &.Mobile {
+    width: 95%;
+    padding: 5%;
   }
 }

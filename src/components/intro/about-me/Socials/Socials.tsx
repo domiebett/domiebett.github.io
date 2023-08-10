@@ -1,15 +1,9 @@
-import { IconName } from 'assets/icons';
 import SocialIcon from 'components/helpers/SocialIcon/SocialIcon';
+import { socialIcons } from 'data/socials';
 
 import './Socials.scss';
 
 const Socials = () => {
-  const socialIcons: IconDetails[] = [
-    { iconName: 'phone', link: '' },
-    { iconName: 'linkedIn', link: '' },
-    { iconName: 'twitter', link: '' },
-  ];
-
   return (
     <div className="Socials">
       <div className="icons">
@@ -20,10 +14,5 @@ const Socials = () => {
     </div>
   );
 };
-
-interface IconDetails {
-  iconName: IconName;
-  link: string;
-}
 
 export default Socials;

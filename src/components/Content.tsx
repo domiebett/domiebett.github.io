@@ -16,13 +16,15 @@ const Content = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, [screenSize, breakPoint]);
 
-  const handleResize = (evt: UIEvent) => {
+  const handleResize = () => {
     if (window.innerWidth <= breakPoint && screenSize !== 'Mobile') {
       setScreenSize('Mobile');
     } else if (window.innerWidth > breakPoint && screenSize !== 'Desktop') {
       setScreenSize('Desktop');
     }
   };
+
+  handleResize();
 
   return (
     <ScreenSizeContext.Provider value={screenSize}>

@@ -1,7 +1,7 @@
 import './TimeLineContent.scss';
 
-const TimeLineContent = ({ content, side }: IProps) => (
-  <div className={`TimeLineContent ${side}`}>
+const TimeLineContent = ({ content, side, screenSize }: IProps) => (
+  <div className={`TimeLineContent ${screenSize} ${side}`}>
     <span className="date">{content.date}</span>
     <div className="content">
       <h2 className="title">{content.title}</h2>
@@ -13,6 +13,7 @@ const TimeLineContent = ({ content, side }: IProps) => (
 export interface IProps {
   content: IContent;
   side: 'left' | 'right';
+  screenSize: string;
 }
 
 export interface IContent {
