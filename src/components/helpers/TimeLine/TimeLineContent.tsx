@@ -1,14 +1,20 @@
 import './TimeLineContent.scss';
 
-const TimeLineContent = ({ content, side, screenSize }: IProps) => (
-  <div className={`TimeLineContent ${screenSize} ${side}`}>
-    <span className="date">{content.date}</span>
-    <div className="content">
-      <h2 className="title">{content.title}</h2>
-      <p className="description">{content.description}</p>
+const TimeLineContent = ({ content, side, screenSize }: IProps) => {
+  const formatDate = (date: Date): string => {
+    return date.toLocaleDateString('en-US', {year: 'numeric', month: 'short'});
+  }
+  
+  return (
+    <div className={`TimeLineContent ${screenSize} ${side}`}>
+      <span className="date">// {formatDate(content.startDate)} - {formatDate(content.endDate)}</span>
+      <div className="content">
+        <h2 className="title">{content.title}</h2>
+        <p className="description">{content.description}</p>
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 export interface IProps {
   content: IContent;
@@ -17,7 +23,8 @@ export interface IProps {
 }
 
 export interface IContent {
-  date: string;
+  startDate: Date;
+  endDate: Date;
   title: string;
   description: string;
 }

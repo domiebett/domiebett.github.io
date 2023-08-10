@@ -1,12 +1,17 @@
 @import './../../styles/variables.scss';
 
 $view-container-top: 75px;
-$view-border-width: 10px;
+$view-border-width: 1px;
 $view-border-radius: 15px;
 
 .MyInfo {
   position: relative;
   height: 100%;
+  background-color: #0000009d;
+
+  * {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  }
 
   .Views {
     .View-container {

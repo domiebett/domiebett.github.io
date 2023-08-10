@@ -5,7 +5,8 @@ import { experiences } from 'data/experienceData';
 
 const timeLineContents = experiences.map((experience) => {
   return {
-    date: experience.startDate,
+    startDate: experience.startDate,
+    endDate: experience.endDate,
     title: experience.title,
     company: experience.company,
     description: experience.description,

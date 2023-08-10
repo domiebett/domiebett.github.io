@@ -12,11 +12,13 @@ const Description = () => {
           I am a :
           <div className="animated-type">
             <span>Software </span>
-            <TypeAnimation
-              sequence={sequence}
-              speed={speed}
-              repeat={Infinity}
-            />
+            <span>
+              <TypeAnimation
+                sequence={sequence}
+                speed={speed}
+                repeat={Infinity}
+              />
+            </span>
           </div>
         </div>
       )}

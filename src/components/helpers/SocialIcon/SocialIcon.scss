@@ -1,9 +1,11 @@
 @import "./../../../styles/variables.scss";
 
+$icon-dimension: 25px;
+
 .SocialIcon {
     @extend .no-style-button;
-    height: 20px;
-    width: 20px;
+    height: $icon-dimension;
+    width: $icon-dimension;
 
     img {
         width: 100%;
