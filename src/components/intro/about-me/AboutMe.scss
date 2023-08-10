@@ -1,54 +1,9 @@
+@import '../../../styles/variables.scss';
+
 .AboutMe {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 60vh;
-  width: 60%;
-
-  .Logo {
-    width: 200px;
-    height: 100px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-
-    .name {
-      font-family: Arial, sans-serif;
-      font-size: 2rem;
-      color: #ffffff;
-    }
-
-    img {
-      height: 100%;
-    }
-  }
-
-  .Description {
-    font-size: 5rem;
-    color: white;
-
-    .animated-type {
-      font-size: 7rem;
-    }
-  }
-
-  .DownloadCv {
-    button {
-      padding: 20px;
-      font-size: 4rem;
-      color: white;
-      border: 2px solid white;
-      border-radius: 60px;
-      background: none;
-      width: 50%;
-      cursor: pointer;
-
-      &:hover {
-        background-color: white;
-        color: #00c4cc;
-      }
-    }
-  }
+  height: 100%;
+  width: 100%;
 }

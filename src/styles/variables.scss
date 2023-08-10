@@ -1,0 +1,48 @@
+$background: #000;
+$app-primary: #fff;
+$app-secondary: #000;
+$app-tertiary: #313131;
+$code-blue: #5379a8;
+$code-green: #5B9A8B;
+$code-yellow: #F7E987;
+
+// text
+$text-color: $app-primary;
+
+// transitions
+$fast-transition: 0.2s;
+$medium-transition: 0.5s;
+
+$fast-transition: all $fast-transition ease-in-out;
+$fast-opacity-transition: opacity $fast-transition ease-in-out;
+
+// buttons
+$button-border-color: $app-primary;
+$button-text: $app-primary;
+$button-border-width: 2px;
+.button {
+  color: $button-text;
+  cursor: pointer;
+}
+.app-button {
+  @extend .button;
+  border-width: $button-border-width;
+  border-color: $button-border-color;
+  border-style: solid;
+}
+.app-button-hover {
+  @extend .app-button;
+
+  &:hover {
+    color: $app-secondary;
+    background-color: $app-primary;
+  }
+}
+.no-style-button {
+  @extend .button;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  text-decoration: none;
+}

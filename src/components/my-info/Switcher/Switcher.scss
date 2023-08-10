@@ -1,0 +1,36 @@
+@import './../../../styles/variables.scss';
+
+.Switcher {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+
+  .Switches {
+    @extend .app-button-hover;
+    border-color: $app-tertiary;
+    border-radius: 20px;
+    background: none;
+    color: $app-primary;
+    padding: 10px;
+    transition: $fast-transition;
+    &.active {
+      background-color: $app-primary;
+      color: $app-secondary;
+    }
+  }
+  &.Desktop {
+    justify-content: flex-start;
+    margin: 20px 0 0 20px;
+
+    .Switches {
+      width: calc(100% / 4);
+    }
+  }
+
+  &.Mobile {
+    .Switches {
+      width: 50%;
+    }
+  }
+}
