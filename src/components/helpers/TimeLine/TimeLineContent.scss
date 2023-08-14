@@ -1,0 +1,71 @@
+@import './../../../styles/variables.scss';
+
+$timeline-offset: 15%;
+$content-container-width: 45%;
+
+.TimeLineContent {
+  .content {
+    position: relative;
+    border-radius: 6px;
+
+    .title {
+      color: $code-yellow;
+    }
+
+    .description {
+      opacity: 0.8;
+    }
+  }
+
+  .date {
+    color: $app-primary;
+    opacity: 0.7;
+  }
+  
+  padding: 0 20px;
+  position: relative;
+  box-sizing: border-box;
+
+  &.Desktop {
+    width: $content-container-width;
+
+    &:nth-child(1) {
+      top: 20px;
+    }
+
+    &.right {
+      left: 55%;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        display: block;
+        height: 4px;
+        width: 5%;
+        background-color: $app-primary;
+      }
+    }
+
+    &.left {
+      text-align: right;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        display: block;
+        height: 4px;
+        width: 5%;
+        background-color: $app-primary;
+      }
+    }
+  }
+
+  &.Mobile {
+    width: 95%;
+    padding: 5%;
+  }
+}

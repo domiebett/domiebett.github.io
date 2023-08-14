@@ -1,0 +1,30 @@
+@import './../../../../styles/variables.scss';
+
+.Description {
+  font-size: 2rem;
+
+  .animated-type {
+    font-size: 3rem;
+
+    span {
+      &:nth-child(1) {
+        color: $code-blue;
+      }
+
+      &:nth-child(2) {
+        * {
+          color: $code-green;
+        }
+      }
+    }
+  }
+
+  &.Mobile {
+    font-size: 2rem;
+    .animated-type {
+      display: grid;
+      grid-template-rows:max-content;
+      font-size: 4rem;
+    }
+  }
+}

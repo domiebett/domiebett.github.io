@@ -1,0 +1,32 @@
+@import './../../styles/variables.scss';
+
+$view-container-top: 75px;
+$view-border-width: 1px;
+$view-border-radius: 15px;
+
+.MyInfo {
+  position: relative;
+  height: 100%;
+  background-color: #0000009d;
+
+  * {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  }
+
+  .Views {
+    .View-container {
+      position: absolute;
+      top: $view-container-top;
+      left: 0;
+      width: 100%;
+      height: calc(100% - $view-container-top);
+      transition: $fast-opacity-transition;
+    }
+  }
+  &.Desktop {
+    border-color: $app-tertiary;
+    border-width: $view-border-width;
+    border-style: solid;
+    border-radius: $view-border-radius;
+  }
+}
