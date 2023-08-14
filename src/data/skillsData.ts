@@ -3,6 +3,7 @@ import {
   Docker,
   Javascript,
   Laravel,
+  MySQL,
   NodeJs,
   Php,
   ReactJs,
@@ -36,5 +37,9 @@ export const skillsData = [
   {
     name: 'Docker',
     logo: Docker,
+  },
+  {
+    name: 'MySQL',
+    logo: MySQL,
   },
 ];

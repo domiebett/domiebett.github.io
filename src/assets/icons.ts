@@ -5,12 +5,14 @@ export const DLogo = require('./icons/D-Logo.png');
 export const LinkedIn = require('./icons/socials/linked-in.png');
 export const Twitter = require('./icons/socials/twitter.png');
 export const Phone = require('./icons/socials/phone.png');
+export const Email = require('./icons/socials/email.png');
 
-export type IconName = 'linkedIn' | 'twitter' | 'phone';
+export type IconName = 'linkedIn' | 'twitter' | 'phone' | 'email';
 export const SocialsIcons: Record<IconName, any> = {
   linkedIn: LinkedIn,
   twitter: Twitter,
   phone: Phone,
+  email: Email,
 };
 
 // Arrows
@@ -31,3 +33,4 @@ export const Laravel = require('./icons/skills/laravel.png');
 export const NodeJs = require('./icons/skills/nodejs.png');
 export const Php = require('./icons/skills/php.png');
 export const ReactJs = require('./icons/skills/reactjs.png');
+export const MySQL = require('./icons/skills/mysql.png');

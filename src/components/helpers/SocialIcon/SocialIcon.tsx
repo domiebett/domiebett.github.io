@@ -4,9 +4,9 @@ import './SocialIcon.scss';
 const SocialsIcon = ({ iconName, link }: Props) => {
   const icon = SocialsIcons[iconName];
   return (
-    <button className='SocialIcon'>
+    <a href={link} className='SocialIcon' target='_blank'>
       <img src={icon} alt="" />
-    </button>
+    </a>
   );
 };
 
