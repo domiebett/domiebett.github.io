@@ -1,0 +1,16 @@
+.Skill {
+  display: inline-block;
+  width: 80px;
+
+  .skill-logo {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .skill-name {
+    text-align: center;
+    font-size: 0.9em;
+  }
+}

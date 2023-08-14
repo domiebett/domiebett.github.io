@@ -1,6 +1,5 @@
 import { createContext, useEffect, useState } from 'react';
 import './Content.scss';
-import Experience from './my-info/Experience/Experience';
 import Intro from './intro/Intro';
 import Socials from './intro/about-me/Socials/Socials';
 import { ScreenSizeContext } from 'contexts/Contexts';
