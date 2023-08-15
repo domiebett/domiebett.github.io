@@ -1,3 +1,5 @@
+@import '../../../../styles/variables.scss';
+
 .Logo {
   width: 150px;
   height: 75px;
@@ -6,6 +8,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+
+  &.Desktop {
+    .name {
+      font-size: $app-xxxxl;
+    }
+  }
 
   .name {
     font-family: Arial, sans-serif;

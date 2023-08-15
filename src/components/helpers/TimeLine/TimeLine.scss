@@ -13,6 +13,7 @@ $circle-half-width: calc($circle-dimensions / 2);
   font-size: 1em;
   &.Desktop {
     height: 100%;
+    font-size: $app-m;
     &::after {
       content: '';
       position: absolute;

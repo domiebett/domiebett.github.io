@@ -20,7 +20,8 @@
   &.Desktop {
     button {
       @extend .DownloadCVButton;
-      width: 60%;
+      font-size: $app-xxxxl;
+      width: 30vw;
       min-width: 400px;
     }
   }
