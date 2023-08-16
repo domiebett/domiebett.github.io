@@ -5,7 +5,8 @@ export const experiences = [
     title: "Software Engineer",
     company: "Andela",
     description:
-      "Andela hires the best engineers and places them in the best companies worldwide. Andela hires the best engineers and places them in the best companies worldwide. Andela hires the best engineers and places them in the best companies worldwide. Andela hires the best engineers and places them in the best companies worldwide.",
+      "I worked with a team to build an Learning Management System built in Angular and Laravel frameworks.",
+    skills: ["Javascript", "Php", "Angular", "Laravel"],
   },
   {
     startDate: new Date(2018, 9),
@@ -13,7 +14,16 @@ export const experiences = [
     title: "Software Engineer",
     company: "Ceros",
     description:
-      "Ceros is a content management system for designers to create content without code. Ceros is a content management system for designers to create content without code. Ceros is a content management system for designers to create content without code. Ceros is a content management system for designers to create content without code.",
+      "I worked with cross functional teams, working on the Ceros Admin, the project and experience management page.",
+    skills: [
+      "Javascript",
+      "Backbone",
+      "React",
+      "Php",
+      "AWS",
+      "Docker",
+      "VMWare",
+    ],
   },
   {
     startDate: new Date(2020, 1),
@@ -21,7 +31,15 @@ export const experiences = [
     title: "Quality Engineer",
     company: "Ceros",
     description:
-      "Ceros is a content management system for designers to create content without code. Ceros is a content management system for designers to create content without code. Ceros is a content management system for designers to create content without code. Ceros is a content management system for designers to create content without code.",
+      "I spearheaded automation efforts, writing new tests and migrating existing Protractor JS to a newer, more modern WebdriverIO & Cucumber.",
+    skills: [
+      "Javascript",
+      "WebdriverIO",
+      "Cucumber",
+      "Protractor",
+      "Jenkins",
+      "Digital Ocean",
+    ],
   },
   {
     startDate: new Date(2022, 1),
@@ -29,6 +47,7 @@ export const experiences = [
     title: "Software Engineer",
     company: "Ceros",
     description:
-      "Ceros is a content management system for designers to create content without code. Ceros is a content management system for designers to create content without code. Ceros is a content management system for designers to create content without code. Ceros is a content management system for designers to create content without code.",
+      "I worked in a team that built the Ceros Studio, a HTML canvas based drag and drop Content Management system to build interactive web content.",
+    skills: ["Javascript", "React", "Backbone", "Php", "AWS", "Docker", "Canvas"],
   },
 ];
