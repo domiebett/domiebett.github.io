@@ -1,4 +1,14 @@
+@import '../../styles/variables.scss';
+
 .Intro {
-  width: 100%;
+  position: fixed;
+  top: 100px;
+  width: 400px;
   height: 100%;
+
+  @media (max-width: $tablet-breakpoint) {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
 }

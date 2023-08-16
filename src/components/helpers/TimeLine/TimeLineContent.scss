@@ -1,71 +1,103 @@
-@import './../../../styles/variables.scss';
+@import "./../../../styles/variables.scss";
 
 $timeline-offset: 15%;
 $content-container-width: 45%;
 
 .TimeLineContent {
+  width: $content-container-width;
+  padding: 0 20px;
+  position: relative;
+  box-sizing: border-box;
+
+  &.right {
+    left: 55%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      display: block;
+      height: 4px;
+      width: 5%;
+      background-color: $app-primary;
+    }
+  }
+
+  &.left {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      display: block;
+      height: 4px;
+      width: 5%;
+      background-color: $app-primary;
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 100%;
+    padding: 0;
+
+    &.right,
+    &.left {
+      position: relative;
+      left: 0;
+      right: unset;
+      bottom: unset;
+      top: 0;
+      text-align: left;
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
   .content {
     position: relative;
-    border-radius: 6px;
 
     .title {
       color: $code-yellow;
     }
 
     .description {
-      opacity: 0.8;
+      opacity: 0.7;
+      font-size: 0.9em;
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+      width: 100%;
+      box-sizing: content-box;
+      font-size: 0.7em;
+      gap: 4px;
+
+      .skill {
+        list-style-type: none;
+        display: inline;
+        margin: 0;
+        padding: 2px 4px;
+        color: $code-green;
+        border: 1px solid $code-green;
+        border-radius: calc(0.75em + 2px);
+      }
     }
   }
 
   .date {
     color: $app-primary;
     opacity: 0.7;
-  }
-  
-  padding: 0 20px;
-  position: relative;
-  box-sizing: border-box;
-
-  &.Desktop {
-    width: $content-container-width;
-
-    &:nth-child(1) {
-      top: 20px;
-    }
-
-    &.right {
-      left: 55%;
-
-      &::after {
-        content: '';
-        position: absolute;
-        right: 100%;
-        top: 50%;
-        display: block;
-        height: 4px;
-        width: 5%;
-        background-color: $app-primary;
-      }
-    }
-
-    &.left {
-      text-align: right;
-
-      &::after {
-        content: '';
-        position: absolute;
-        left: 100%;
-        top: 50%;
-        display: block;
-        height: 4px;
-        width: 5%;
-        background-color: $app-primary;
-      }
-    }
-  }
-
-  &.Mobile {
-    width: 95%;
-    padding: 5%;
   }
 }

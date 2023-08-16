@@ -6,13 +6,15 @@ export const LinkedIn = require('./icons/socials/linked-in.png');
 export const Twitter = require('./icons/socials/twitter.png');
 export const Phone = require('./icons/socials/phone.png');
 export const Email = require('./icons/socials/email.png');
+export const Github = require('./icons/socials/github.png');
 
-export type IconName = 'linkedIn' | 'twitter' | 'phone' | 'email';
+export type IconName = 'linkedIn' | 'twitter' | 'phone' | 'email' | 'github';
 export const SocialsIcons: Record<IconName, any> = {
   linkedIn: LinkedIn,
   twitter: Twitter,
   phone: Phone,
   email: Email,
+  github: Github,
 };
 
 // Arrows

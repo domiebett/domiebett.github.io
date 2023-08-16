@@ -1,29 +1,9 @@
-import { ScreenSizeContext } from 'contexts/Contexts';
 import './Description.scss';
 
-import { TypeAnimation } from 'react-type-animation';
-import { speed, sequence } from 'data/iamData';
-
-const Description = () => {
-  return (
-    <ScreenSizeContext.Consumer>
-      {(screenSize) => (
-        <div className={`Description ${screenSize}`}>
-          I am a :
-          <div className="animated-type">
-            <span>Software </span>
-            <span>
-              <TypeAnimation
-                sequence={sequence}
-                speed={speed}
-                repeat={Infinity}
-              />
-            </span>
-          </div>
-        </div>
-      )}
-    </ScreenSizeContext.Consumer>
-  );
-};
+const Description = () => (
+    <div className="Description">
+        <p>I am a Full Stack Software Developer with over 6 years of experience. I have experience with Javascript and PHP.</p>
+    </div>
+)
 
 export default Description;

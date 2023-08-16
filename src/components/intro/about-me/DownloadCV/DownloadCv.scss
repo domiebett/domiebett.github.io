@@ -1,36 +1,17 @@
-@import './../../../../styles/variables.scss';
-
-.DownloadCVButton {
-  @extend .app-button-hover;
-  padding: 10px;
-  font-size: 2rem;
-  border-radius: 60px;
-  background: none;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
+@import "./../../../../styles/variables.scss";
 
 .DownloadCV {
-  &.Desktop {
-    button {
-      @extend .DownloadCVButton;
-      font-size: $app-xxxxl;
-      width: 30vw;
-      min-width: 400px;
-    }
-  }
+  margin-top: 2em;
+  a {
+    color: $app-primary;
+    text-decoration: dashed;
+    text-decoration-line:underline;
+    text-decoration-color: $app-primary;
+    padding-bottom: 20px;
 
-  &.Mobile {
-    button {
-      @extend .DownloadCVButton;
-      width: 100%;
-      min-width: 100%;
+    &:hover {
+      color: $code-green;
+      text-decoration-color: $code-green;
     }
   }
 }

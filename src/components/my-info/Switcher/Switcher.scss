@@ -5,6 +5,9 @@
   flex-direction: row;
   gap: 10px;
   width: 100%;
+  justify-content: flex-start;
+  margin-top: $app-s;
+  margin-left: $app-s;
 
   .Switches {
     @extend .app-button-hover;
@@ -12,26 +15,14 @@
     border-radius: 20px;
     background: none;
     color: $app-primary;
-    padding: 10px;
+    padding: $app-xxxs;
     transition: $fast-transition;
+    width: calc(100% / 4);
+    font-size: $app-s;
+
     &.active {
       background-color: $app-primary;
       color: $app-secondary;
-    }
-  }
-  &.Desktop {
-    justify-content: flex-start;
-    margin: 20px 0 0 20px;
-
-    .Switches {
-      width: calc(100% / 4);
-      font-size: 0.9vw;
-    }
-  }
-
-  &.Mobile {
-    .Switches {
-      width: 50%;
     }
   }
 }

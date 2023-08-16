@@ -17,17 +17,21 @@ $fast-transition: all $fast-transition ease-in-out;
 $fast-opacity-transition: opacity $fast-transition ease-in-out;
 
 // sizes
-$app-xxxs: 0.5vw;
-$app-xxs: 0.6vw;
-$app-xs: 0.7vw;
-$app-s: 0.8vw;
-$app-m: 0.9vw;
-$app-l: 1vw;
-$app-xl: 1.1vw;
-$app-xxl: 1.2vw;
-$app-xxxl: 1.3vw;
-$app-xxxxl: 1.4vw;
-$app-super-xl: 3vw;
+$app-xxxs: 0.5em;
+$app-xxs: 0.6em;
+$app-xs: 0.7em;
+$app-s: 0.8em;
+$app-m: 0.9em;
+$app-l: 1em;
+$app-xl: 1.2em;
+$app-xxl: 1.5em;
+$app-xxxl: 1.7em;
+$app-xxxxl: 2em;
+$app-super-xl: 3em;
+
+// breakpoints
+$tablet-breakpoint: 1100px;
+$mobile-breakpoint: 600px;
 
 // buttons
 $button-border-color: $app-primary;

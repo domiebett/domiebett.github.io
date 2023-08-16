@@ -3,13 +3,14 @@ import './Experience.scss';
 import { experiences } from 'data/experienceData';
 
 
-const timeLineContents = experiences.map((experience) => {
+const timeLineContents = experiences.reverse().map((experience) => {
   return {
     startDate: experience.startDate,
     endDate: experience.endDate,
     title: experience.title,
     company: experience.company,
     description: experience.description,
+    skills: experience.skills,
   };
 });
 

@@ -1,0 +1,12 @@
+@import "./../../../../styles/variables.scss";
+
+.Role {
+  font-size: $app-xxl;
+
+  .animated-type {
+    font-size: $app-xl;
+    span {
+      color: $code-green;
+    }
+  }
+}
