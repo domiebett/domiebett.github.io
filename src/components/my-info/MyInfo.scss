@@ -6,35 +6,32 @@ $view-border-radius: 15px;
 
 .MyInfo {
   position: relative;
+  width: 100%;
+  max-width: 650px;
+  float: right;
+  margin: 0 auto;
   height: 100%;
   background-color: #0000009d;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-top: 3em;
+    max-width: 100%;
+    float: none;
+  }
 
   * {
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
   }
 
   .Views {
-    .View-container {
-      position: absolute;
-      top: $view-container-top;
-      left: 0;
-      width: 100%;
-      height: calc(100% - $view-container-top);
-      transition: $fast-opacity-transition;
-    }
-  }
-  &.Desktop {
-    border-color: $app-tertiary;
-    border-width: $view-border-width;
-    border-style: solid;
-    border-radius: $view-border-radius;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
 
-    &::-webkit-scrollbar {
-      display: none;
+    .View-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
     }
   }
 }

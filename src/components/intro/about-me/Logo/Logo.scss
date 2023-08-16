@@ -1,26 +1,10 @@
 @import '../../../../styles/variables.scss';
 
 .Logo {
-  width: 150px;
-  height: 75px;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-
-  &.Desktop {
-    .name {
-      font-size: $app-xxxxl;
-    }
-  }
+  width: 100%;
 
   .name {
     font-family: Arial, sans-serif;
-    font-size: 1.5rem;
-  }
-
-  img {
-    height: 100%;
+    font-size: $app-super-xl;
   }
 }

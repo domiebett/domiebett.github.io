@@ -1,14 +1,19 @@
+@import '../../../../styles/variables.scss';
+
 .Socials {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  padding-bottom: 20px;
+  bottom: 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    position: relative;
+    margin-top: 2em;
+  }
 
   .icons {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 40px;
+    gap: 30px;
   }
 }

@@ -1,22 +1,16 @@
-import { ScreenSizeContext } from 'contexts/Contexts';
 import './TimeLine.scss';
 import TimeLineContent, { IContent } from './TimeLineContent';
 
 const TimeLine = ({ contents }: Props) => (
-  <ScreenSizeContext.Consumer>
-    {(screenSize) => (
-      <div className={`TimeLine ${screenSize}`}>
+      <div className={"TimeLine"}>
         {contents.map((content, index) => (
           <TimeLineContent
             key={index}
             content={content}
             side={index % 2 === 0 ? 'left' : 'right'}
-            screenSize={screenSize}
           />
         ))}
       </div>
-    )}
-  </ScreenSizeContext.Consumer>
 );
 
 interface Props {

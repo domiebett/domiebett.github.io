@@ -1,6 +1,6 @@
 @import "./../../../styles/variables.scss";
 
-$icon-dimension: 25px;
+$icon-dimension: $app-xxl;
 
 .SocialIcon {
     @extend .no-style-button;
