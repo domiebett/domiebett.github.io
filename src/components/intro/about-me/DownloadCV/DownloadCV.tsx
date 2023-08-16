@@ -1,4 +1,3 @@
-import { ScreenSizeContext } from "contexts/Contexts";
 import "./DownloadCv.scss";
 import { Resume } from "files/files";
 

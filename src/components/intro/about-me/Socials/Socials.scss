@@ -1,7 +1,14 @@
+@import '../../../../styles/variables.scss';
+
 .Socials {
   position: absolute;
   display: inline-block;
   bottom: 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    position: relative;
+    margin-top: 2em;
+  }
 
   .icons {
     display: inline-flex;

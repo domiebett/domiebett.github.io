@@ -4,4 +4,8 @@
   position: relative;
   height: 400px;
   width: 100%;
+
+  @media (max-width: $tablet-breakpoint) {
+    height: auto;
+  }
 }

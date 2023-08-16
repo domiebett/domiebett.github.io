@@ -1,19 +1,14 @@
-import { skillsData } from 'data/skillsData';
-import './Skills.scss';
-import Skill from './Skill/Skill';
-import { ScreenSizeContext } from 'contexts/Contexts';
+import { skillsData } from "data/skillsData";
+import "./Skills.scss";
+import Skill from "./Skill/Skill";
 
 const Skills = () => {
   return (
-    <ScreenSizeContext.Consumer>
-      {(screenSize) => (
-        <div className={`Skills ${screenSize}`}>
-          {skillsData.map((skillData, index) => (
-            <Skill key={index} name={skillData.name} logo={skillData.logo} />
-          ))}
-        </div>
-      )}
-    </ScreenSizeContext.Consumer>
+    <div className={"Skills"}>
+      {skillsData.map((skillData, index) => (
+        <Skill key={index} name={skillData.name} logo={skillData.logo} />
+      ))}
+    </div>
   );
 };
 

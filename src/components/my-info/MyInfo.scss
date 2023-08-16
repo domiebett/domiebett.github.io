@@ -13,6 +13,12 @@ $view-border-radius: 15px;
   height: 100%;
   background-color: #0000009d;
 
+  @media (max-width: $tablet-breakpoint) {
+    margin-top: 3em;
+    max-width: 100%;
+    float: none;
+  }
+
   * {
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
   }

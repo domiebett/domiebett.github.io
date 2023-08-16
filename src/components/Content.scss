@@ -13,11 +13,13 @@
   padding: 100px;
   margin: 0 auto;
   gap: 20px;
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
 
-  &::-webkit-scrollbar {
-    display: none;
+  @media (max-width: $tablet-breakpoint) {
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
   }
 
   .Panel {

@@ -7,6 +7,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-family: 'Courier New', Courier, monospace;
   z-index: 1;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   background-size:cover;
   color: $app-primary;
   overflow-x: clip;
+  width: 100%;
 }
 
 .App {

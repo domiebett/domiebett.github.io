@@ -1,4 +1,4 @@
-@import './../../../styles/variables.scss';
+@import "./../../../styles/variables.scss";
 
 $timeline-offset: 50%;
 
@@ -11,34 +11,43 @@ $circle-half-width: calc($circle-dimensions / 2);
 .TimeLine {
   width: 100%;
   font-size: 1em;
-  &.Desktop {
-    height: 100%;
-    font-size: $app-m;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 10px;
-      bottom: 0;
-      left: $timeline-offset;
-      width: 6px;
-      height: 95%;
-      margin-left: -3px;
-      background-color: $app-primary;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      top: $circle-top;
-      left: $circle-left;
-      margin-left: -$circle-half-width;
-      width: $circle-dimensions;
-      height: $circle-dimensions;
-      background-color: $app-primary;
-      border-radius: 50%;
-    }
+  height: 100%;
+  font-size: $app-m;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: $timeline-offset;
+    width: 6px;
+    height: 95%;
+    margin-left: -3px;
+    background-color: $app-primary;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: $circle-top;
+    left: $circle-left;
+    margin-left: -$circle-half-width;
+    width: $circle-dimensions;
+    height: $circle-dimensions;
+    background-color: $app-primary;
+    border-radius: 50%;
   }
 
-  &.Mobile {
-    height: auto;
+  @media (max-width: $mobile-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+    
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 }

@@ -1,4 +1,3 @@
-import { ScreenSizeContext } from "contexts/Contexts";
 import "./Switcher.scss";
 
 const Switcher = ({ setActiveView, titles, activeView }: Props) => {
