@@ -1,19 +1,17 @@
-import { ScreenSizeContext } from 'contexts/Contexts';
-import './DownloadCv.scss';
-import { Resume } from 'files/files';
+import { ScreenSizeContext } from "contexts/Contexts";
+import "./DownloadCv.scss";
+import { Resume } from "files/files";
 
 const DownloadCV = () => {
-  const fileName = 'Dominic Bett Resume.pdf';
-  
-  return <ScreenSizeContext.Consumer>
-    {(screenSize) => (
-      <div className={`DownloadCV ${screenSize}`}>
-        <button>
-          <a href={Resume} download={fileName}>Download CV</a>
-        </button>
-      </div>
-    )}
-  </ScreenSizeContext.Consumer>
+  const fileName = "Dominic Bett Resume.pdf";
+
+  return (
+    <div className="DownloadCV">
+      <a href={Resume} target="_blank">
+        View Resume
+      </a>
+    </div>
+  );
 };
 
 export default DownloadCV;

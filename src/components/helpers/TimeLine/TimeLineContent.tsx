@@ -9,7 +9,7 @@ const TimeLineContent = ({ content, side, screenSize }: IProps) => {
     <div className={`TimeLineContent ${screenSize} ${side}`}>
       <span className="date">// {formatDate(content.startDate)} - {formatDate(content.endDate)}</span>
       <div className="content">
-        <h2 className="title">{content.title}</h2>
+        <h3 className="title">{content.title}</h3>
         <p className="description">{content.description}</p>
       </div>
     </div>

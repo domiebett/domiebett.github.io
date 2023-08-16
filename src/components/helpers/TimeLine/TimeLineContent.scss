@@ -29,10 +29,6 @@ $content-container-width: 45%;
   &.Desktop {
     width: $content-container-width;
 
-    &:nth-child(1) {
-      top: 20px;
-    }
-
     &.right {
       left: 55%;
 
@@ -49,7 +45,7 @@ $content-container-width: 45%;
     }
 
     &.left {
-      text-align: right;
+      // text-align: right;
 
       &::after {
         content: '';

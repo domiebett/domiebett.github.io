@@ -1,33 +1,4 @@
-@import './../../../../styles/variables.scss';
-
 .Description {
-  .animated-type {
-    span {
-      &:nth-child(1) {
-        color: $code-blue;
-      }
-
-      &:nth-child(2) {
-        * {
-          color: $code-green;
-        }
-      }
-    }
-  }
-
-  &.Desktop {
-    font-size: $app-xxxxl;
-    .animated-type {
-      font-size: $app-super-xl;
-    }
-  }
-
-  &.Mobile {
-    font-size: 2rem;
-    .animated-type {
-      display: grid;
-      grid-template-rows:max-content;
-      font-size: 4rem;
-    }
-  }
+    margin-top: 3em;
+    text-align: justify;
 }
