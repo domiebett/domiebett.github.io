@@ -8,5 +8,10 @@
     text-decoration-line:underline;
     text-decoration-color: $app-primary;
     padding-bottom: 20px;
+
+    &:hover {
+      color: $code-green;
+      text-decoration-color: $code-green;
+    }
   }
 }
