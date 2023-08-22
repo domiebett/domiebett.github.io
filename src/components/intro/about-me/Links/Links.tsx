@@ -1,7 +1,8 @@
-import "./DownloadCv.scss";
+import "./Links.scss";
 import { Resume } from "files/files";
+import { Link } from "react-router-dom";
 
-const DownloadCV = () => {
+const Links = () => {
   const fileName = "Dominic Bett Resume.pdf";
 
   return (
@@ -13,4 +14,4 @@ const DownloadCV = () => {
   );
 };
 
-export default DownloadCV;
+export default Links;
