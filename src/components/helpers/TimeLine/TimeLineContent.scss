@@ -69,7 +69,7 @@ $content-container-width: 45%;
 
     .description {
       opacity: 0.7;
-      font-size: 0.9em;
+      font-size: $app-normal;
     }
 
     .skills {
@@ -81,18 +81,8 @@ $content-container-width: 45%;
       margin-top: 10px;
       width: 100%;
       box-sizing: content-box;
-      font-size: 0.7em;
+      font-size: $app-xs;
       gap: 4px;
-
-      .skill {
-        list-style-type: none;
-        display: inline;
-        margin: 0;
-        padding: 2px 4px;
-        color: $code-green;
-        border: 1px solid $code-green;
-        border-radius: calc(0.75em + 2px);
-      }
     }
   }
 

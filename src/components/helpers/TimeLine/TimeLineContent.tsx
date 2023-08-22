@@ -1,3 +1,4 @@
+import Tech from "../Tech/Tech";
 import "./TimeLineContent.scss";
 
 const TimeLineContent = ({ content, side }: IProps) => {
@@ -18,7 +19,7 @@ const TimeLineContent = ({ content, side }: IProps) => {
         <p className="description">{content.description}</p>
         <ul className="skills">
           {content.skills.map((skill, index) => (
-            <li key={index} className="skill">{skill}</li>
+            <Tech key={index} name={skill} />
           ))}
         </ul>
       </div>

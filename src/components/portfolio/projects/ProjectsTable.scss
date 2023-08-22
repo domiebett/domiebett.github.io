@@ -1,0 +1,57 @@
+@import "../../../styles/variables.scss";
+
+$table-border-width: 1px;
+
+.ProjectsTable {
+  width: 100%;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: $app-normal;
+
+    tr {
+      padding: 10px;
+      border-color: $app-tertiary !important;
+      border-bottom: $table-border-width solid;
+      text-align: left;
+      th {
+        padding: 10px 10px 10px 0;
+      }
+      td {
+        padding: 15px 10px 30px 0;
+        color: $app-gray;
+
+        &.project {
+          color: $app-primary;
+        }
+
+        &.link {
+          a {
+            @extend .app-link;
+            display: flex;
+            flex-direction: row;
+            text-decoration-line: none;
+            gap: 10px;
+            color: $app-gray;
+
+            .underline {
+              text-decoration-line: underline;
+              text-decoration-style: dashed;
+            }
+          }
+        }
+
+        &.tech {
+          ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: $app-s;
+          }
+        }
+      }
+    }
+  }
+}

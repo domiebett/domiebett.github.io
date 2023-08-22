@@ -6,10 +6,9 @@ const Links = () => {
   const fileName = "Dominic Bett Resume.pdf";
 
   return (
-    <div className="DownloadCV">
-      <a href={Resume} target="_blank">
-        View Resume
-      </a>
+    <div className="Links">
+      <Link to={Resume} target="_blank">View Resume</Link>
+      <Link to={'/portfolio'}>View Portfolio</Link>
     </div>
   );
 };
