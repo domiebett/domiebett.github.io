@@ -11,9 +11,18 @@
   }
 
   .icons {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 30px;
+    &.horizontal {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 30px;
+    }
+
+    &.vertical {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 30px;
+    }
   }
 }

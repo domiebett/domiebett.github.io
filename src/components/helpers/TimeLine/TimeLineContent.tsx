@@ -1,3 +1,5 @@
+import { AndelaImage } from "assets/images";
+import Tech from "../Tech/Tech";
 import "./TimeLineContent.scss";
 
 const TimeLineContent = ({ content, side }: IProps) => {
@@ -14,13 +16,16 @@ const TimeLineContent = ({ content, side }: IProps) => {
         // {formatDate(content.startDate)} - {formatDate(content.endDate)}
       </span>
       <div className="content">
-        <h3 className="title">{content.title}</h3>
+        <h3 className="title">{content.title} - {content.company}</h3>
         <p className="description">{content.description}</p>
         <ul className="skills">
           {content.skills.map((skill, index) => (
-            <li key={index} className="skill">{skill}</li>
+            <Tech key={index} name={skill} />
           ))}
         </ul>
+      </div>
+      <div className="company-image">
+        <img src={content.companyImage} alt="" />
       </div>
     </div>
   );
@@ -37,6 +42,8 @@ export interface IContent {
   title: string;
   description: string;
   skills: string[];
+  company: string;
+  companyImage: any;
 }
 
 export default TimeLineContent;

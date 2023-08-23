@@ -9,8 +9,23 @@ $content-container-width: 45%;
   position: relative;
   box-sizing: border-box;
 
+  .company-image {
+    position: absolute;
+    width: 70%;
+    top: 25%;
+    max-width: 250px;
+
+    img {
+      width: 100%;
+    }
+  }
+
   &.right {
     left: 55%;
+
+    .company-image {
+      right: 145%;
+    }
 
     &::after {
       content: "";
@@ -25,6 +40,10 @@ $content-container-width: 45%;
   }
 
   &.left {
+
+    .company-image {
+      left: 135%;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -40,6 +59,10 @@ $content-container-width: 45%;
   @media (max-width: $mobile-breakpoint) {
     width: 100%;
     padding: 0;
+
+    .company-image {
+      display: none;
+    }
 
     &.right,
     &.left {
@@ -65,11 +88,13 @@ $content-container-width: 45%;
 
     .title {
       color: $code-yellow;
+      margin-bottom: 1em;
     }
 
     .description {
       opacity: 0.7;
-      font-size: 0.9em;
+      font-size: $app-normal;
+      line-height: 1.7em;
     }
 
     .skills {
@@ -81,18 +106,8 @@ $content-container-width: 45%;
       margin-top: 10px;
       width: 100%;
       box-sizing: content-box;
-      font-size: 0.7em;
+      font-size: $app-xs;
       gap: 4px;
-
-      .skill {
-        list-style-type: none;
-        display: inline;
-        margin: 0;
-        padding: 2px 4px;
-        color: $code-green;
-        border: 1px solid $code-green;
-        border-radius: calc(0.75em + 2px);
-      }
     }
   }
 

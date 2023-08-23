@@ -1,22 +1,36 @@
 @import "./styles/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
 
 * {
   padding: 0;
   margin: 0;
   user-select: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
   z-index: 1;
   box-sizing: border-box;
 }
 
 body {
   background-color: $app-secondary;
+  background-image: url('./assets/images/code-editor-bg.jpeg');
   background-position: 0%;
   background-size:cover;
   color: $app-primary;
   overflow-x: clip;
   width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.9;
+  }
 }
 
 .App {
