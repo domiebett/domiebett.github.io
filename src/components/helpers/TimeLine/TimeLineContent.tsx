@@ -1,3 +1,4 @@
+import { AndelaImage } from "assets/images";
 import Tech from "../Tech/Tech";
 import "./TimeLineContent.scss";
 
@@ -23,6 +24,9 @@ const TimeLineContent = ({ content, side }: IProps) => {
           ))}
         </ul>
       </div>
+      <div className="company-image">
+        <img src={content.companyImage} alt="" />
+      </div>
     </div>
   );
 };
@@ -39,6 +43,7 @@ export interface IContent {
   description: string;
   skills: string[];
   company: string;
+  companyImage: any;
 }
 
 export default TimeLineContent;

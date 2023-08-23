@@ -57,7 +57,7 @@ export const projectsData: Project[] = [
   },
   {
     year: 2017,
-    project: "Learning Management System",
+    project: "Lenken Mentorship System",
     madeAt: "Andela",
     tech: ["Angular", "Laravel", "WYSIWYG"],
     link: '',

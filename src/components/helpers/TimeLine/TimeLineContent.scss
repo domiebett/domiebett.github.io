@@ -9,8 +9,23 @@ $content-container-width: 45%;
   position: relative;
   box-sizing: border-box;
 
+  .company-image {
+    position: absolute;
+    width: 70%;
+    top: 25%;
+    max-width: 250px;
+
+    img {
+      width: 100%;
+    }
+  }
+
   &.right {
     left: 55%;
+
+    .company-image {
+      right: 145%;
+    }
 
     &::after {
       content: "";
@@ -25,6 +40,10 @@ $content-container-width: 45%;
   }
 
   &.left {
+
+    .company-image {
+      left: 135%;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -40,6 +59,10 @@ $content-container-width: 45%;
   @media (max-width: $mobile-breakpoint) {
     width: 100%;
     padding: 0;
+
+    .company-image {
+      display: none;
+    }
 
     &.right,
     &.left {
@@ -65,6 +88,7 @@ $content-container-width: 45%;
 
     .title {
       color: $code-yellow;
+      margin-bottom: 1em;
     }
 
     .description {
