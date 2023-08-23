@@ -1,8 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d3c2574.css",
-    "main.js": "/static/js/main.50d8a631.js",
+    "main.css": "/static/css/main.2c64b099.css",
+    "main.js": "/static/js/main.12869ffd.js",
+    "static/media/code-editor-bg.jpeg": "/static/media/code-editor-bg.598a7ad847c57a0d7b6c.jpeg",
+    "static/media/andela-image.png": "/static/media/andela-image.f64b36e5f52c96f5cf71.png",
+    "static/media/ceros-image.png": "/static/media/ceros-image.6115266e2ad917f63ece.png",
+    "static/media/dom-no-background.png": "/static/media/dom-no-background.ac30301d7964e4c70123.png",
+    "static/media/andela-software-dev.png": "/static/media/andela-software-dev.0dc78f9adfd3090c1b5d.png",
     "static/media/Resume.pdf": "/static/media/Resume.967a86c5ebb64656a592.pdf",
+    "static/media/ceros-software-dev2.png": "/static/media/ceros-software-dev2.85ef13956f422ebb52b0.png",
+    "static/media/ceros-software-dev.png": "/static/media/ceros-software-dev.6554700545980bbd1eb6.png",
+    "static/media/ceros-quality-engineer.png": "/static/media/ceros-quality-engineer.92cf521806d6785cdbac.png",
     "static/media/php.png": "/static/media/php.59194159242c4b9fd466.png",
     "static/media/reactjs.png": "/static/media/reactjs.40cded91a2dc0ba3359c.png",
     "static/media/docker.png": "/static/media/docker.a316a98d66dd4b00f351.png",
@@ -13,11 +21,11 @@
     "static/media/mysql.png": "/static/media/mysql.320b23bcac1d9fa3dd37.png",
     "static/media/javascript.png": "/static/media/javascript.74276a565e705bd7a035.png",
     "index.html": "/index.html",
-    "main.8d3c2574.css.map": "/static/css/main.8d3c2574.css.map",
-    "main.50d8a631.js.map": "/static/js/main.50d8a631.js.map"
+    "main.2c64b099.css.map": "/static/css/main.2c64b099.css.map",
+    "main.12869ffd.js.map": "/static/js/main.12869ffd.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d3c2574.css",
-    "static/js/main.50d8a631.js"
+    "static/css/main.2c64b099.css",
+    "static/js/main.12869ffd.js"
   ]
 }
