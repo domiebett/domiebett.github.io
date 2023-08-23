@@ -10,24 +10,6 @@ $table-border-width: 1px;
     border-collapse: collapse;
     font-size: $app-normal;
 
-    @media (max-width: $tablet-breakpoint) {
-      .madeAt {
-        display: none;
-      }
-    }
-
-    @media (max-width: 800px) {
-      .tech {
-        display: none;
-      }
-    }
-  
-    @media (max-width: $mobile-breakpoint) {
-      .link {
-        display: none;
-      }
-    }
-
     tr {
       padding: 10px;
       border-color: $app-tertiary !important;
@@ -52,10 +34,12 @@ $table-border-width: 1px;
             text-decoration-line: none;
             gap: 10px;
             color: $app-gray;
+            font-size: $app-s;
 
             .underline {
               text-decoration-line: underline;
               text-decoration-style: dashed;
+              word-break: break-all;
             }
           }
         }
@@ -69,6 +53,24 @@ $table-border-width: 1px;
             font-size: $app-s;
           }
         }
+      }
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+      .madeAt {
+        display: none;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .tech {
+        display: none;
+      }
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      .link {
+        display: none;
       }
     }
   }

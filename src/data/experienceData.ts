@@ -48,6 +48,6 @@ export const experiences = [
     company: "Ceros",
     description:
       "I worked in a team that built the Ceros Studio, a HTML canvas based drag and drop Content Management system to build interactive web content.",
-    skills: ["Javascript", "React", "Backbone", "Php", "AWS", "Docker", "Canvas"],
+    skills: ["Javascript", "React", "Backbone", "Php", "AWS", "Docker", "HTMLCanvas"],
   },
 ];

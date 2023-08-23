@@ -19,7 +19,9 @@ const TableHead = ({ columns }: any) => (
   <thead>
     <tr>
       {columns.map((column: IColumn, index: number) => (
-        <th className={column.name} key={index}>{column.title}</th>
+        <th className={column.name} key={index}>
+          {column.title}
+        </th>
       ))}
     </tr>
   </thead>
@@ -48,7 +50,12 @@ const TableRow = ({ project }: any) => (
       }
     </td>
     <td className="link">
-      <Link to={project["link"]} target="_blank"><span className="underline">{project["link"]}</span> <span>&#8599;</span></Link>
+      {project["link"] && (
+        <Link to={project["link"]} target="_blank">
+          <span className="underline">{project["link"]}</span>{" "}
+          <span>&#8599;</span>
+        </Link>
+      )}
     </td>
   </tr>
 );

@@ -15,7 +15,7 @@ const TimeLineContent = ({ content, side }: IProps) => {
         // {formatDate(content.startDate)} - {formatDate(content.endDate)}
       </span>
       <div className="content">
-        <h3 className="title">{content.title}</h3>
+        <h3 className="title">{content.title} - {content.company}</h3>
         <p className="description">{content.description}</p>
         <ul className="skills">
           {content.skills.map((skill, index) => (
@@ -38,6 +38,7 @@ export interface IContent {
   title: string;
   description: string;
   skills: string[];
+  company: string;
 }
 
 export default TimeLineContent;

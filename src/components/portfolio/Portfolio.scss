@@ -54,6 +54,10 @@
     .back-home {
       position: relative;
       margin-top: 10px;
+
+      a {
+        color: $code-green;
+      }
     }
 
     .sidebar {
