@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c64b099.css",
+    "main.css": "/static/css/main.ab117069.css",
     "main.js": "/static/js/main.12869ffd.js",
     "static/media/code-editor-bg.jpeg": "/static/media/code-editor-bg.598a7ad847c57a0d7b6c.jpeg",
     "static/media/andela-image.png": "/static/media/andela-image.f64b36e5f52c96f5cf71.png",
@@ -21,11 +21,11 @@
     "static/media/mysql.png": "/static/media/mysql.320b23bcac1d9fa3dd37.png",
     "static/media/javascript.png": "/static/media/javascript.74276a565e705bd7a035.png",
     "index.html": "/index.html",
-    "main.2c64b099.css.map": "/static/css/main.2c64b099.css.map",
+    "main.ab117069.css.map": "/static/css/main.ab117069.css.map",
     "main.12869ffd.js.map": "/static/js/main.12869ffd.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c64b099.css",
+    "static/css/main.ab117069.css",
     "static/js/main.12869ffd.js"
   ]
 }
