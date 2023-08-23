@@ -1,3 +1,5 @@
+import { AndelaImage, CerosImage } from "assets/images";
+
 export const experiences = [
   {
     startDate: new Date(2017, 5),
@@ -5,8 +7,9 @@ export const experiences = [
     title: "Software Engineer",
     company: "Andela",
     description:
-      "I worked with a team to build an Learning Management System built in Angular and Laravel frameworks.",
+      "As part of a dynamic team at Andela, we engineered Lenken, an impactful Mentorship system. Seamlessly aligning individuals with mentors, Lenken propels personalized professional growth through inventive design and technical excellence.",
     skills: ["Javascript", "Php", "Angular", "Laravel"],
+    companyImage: AndelaImage,
   },
   {
     startDate: new Date(2018, 9),
@@ -14,7 +17,7 @@ export const experiences = [
     title: "Software Engineer",
     company: "Ceros",
     description:
-      "I worked with cross functional teams, working on the Ceros Admin, the project and experience management page.",
+      "In tandem with the Ceros Admin team, I molded an intuitive hub for managing projects and experiences. By blending tech expertise with creative finesse, I transformed how interactive content is crafted and controlled.",
     skills: [
       "Javascript",
       "Backbone",
@@ -24,6 +27,7 @@ export const experiences = [
       "Docker",
       "VMWare",
     ],
+    companyImage: CerosImage,
   },
   {
     startDate: new Date(2020, 1),
@@ -31,7 +35,7 @@ export const experiences = [
     title: "Quality Engineer",
     company: "Ceros",
     description:
-      "I spearheaded automation efforts, writing new tests and migrating existing Protractor JS to a newer, more modern WebdriverIO & Cucumber.",
+      "As a Quality Engineer at Ceros, I worked in a dynamic team that orchestrated a transformative framework migration from Protractor to WebdriverIO. This pivotal shift amplified our end-to-end testing capabilities, fortifying quality standards across the board.",
     skills: [
       "Javascript",
       "WebdriverIO",
@@ -40,6 +44,7 @@ export const experiences = [
       "Jenkins",
       "Digital Ocean",
     ],
+    companyImage: CerosImage,
   },
   {
     startDate: new Date(2022, 1),
@@ -47,7 +52,8 @@ export const experiences = [
     title: "Software Engineer",
     company: "Ceros",
     description:
-      "I worked in a team that built the Ceros Studio, a HTML canvas based drag and drop Content Management system to build interactive web content.",
-    skills: ["Javascript", "React", "Backbone", "Php", "AWS", "Docker", "Canvas"],
+      "I powered 6 years of Ceros Studio evolution, empowering designers to create captivating websites effortlessly. My role fused tech finesse with creative ardor, turning concepts into immersive digital realities and cementing Ceros Studio's pioneering stance.",
+    skills: ["Javascript", "React", "Backbone", "Php", "AWS", "Docker", "HTMLCanvas"],
+    companyImage: CerosImage,
   },
 ];

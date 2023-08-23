@@ -11,6 +11,7 @@ const timeLineContents = experiences.reverse().map((experience) => {
     company: experience.company,
     description: experience.description,
     skills: experience.skills,
+    companyImage: experience.companyImage,
   };
 });
 

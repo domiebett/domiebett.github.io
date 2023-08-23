@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.skill {
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+  padding: 2px 4px;
+  color: $code-green;
+  border: 1px solid $code-green;
+  border-radius: calc(0.75em + 2px);
+}

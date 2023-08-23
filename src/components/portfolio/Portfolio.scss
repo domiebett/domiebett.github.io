@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.Portfolio {
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .projects {
+    margin-top: 3em;
+  }
+
+  .back-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    margin-top: -2em;
+    height: 20px;
+
+    img {
+      height: 100%;
+    }
+    a {
+      @extend .app-link;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      text-decoration-line: none;
+
+      .underline {
+        text-decoration: dashed;
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .sidebar {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    width: 50px;
+    height: 100vh;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 20px;
+
+    .back-home {
+      position: relative;
+      margin-top: 10px;
+
+      a {
+        color: $code-green;
+      }
+    }
+
+    .sidebar {
+      display: none;
+    }
+  }
+}

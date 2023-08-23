@@ -10,7 +10,7 @@ $circle-half-width: calc($circle-dimensions / 2);
 
 .TimeLine {
   width: 100%;
-  font-size: 1em;
+  font-size: $app-normal;
   height: 100%;
   font-size: $app-m;
   &::after {
