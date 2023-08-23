@@ -19,7 +19,7 @@ const TableHead = ({ columns }: any) => (
   <thead>
     <tr>
       {columns.map((column: IColumn, index: number) => (
-        <th key={index}>{column.title}</th>
+        <th className={column.name} key={index}>{column.title}</th>
       ))}
     </tr>
   </thead>

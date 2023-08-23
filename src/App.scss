@@ -12,11 +12,24 @@
 
 body {
   background-color: $app-secondary;
+  background-image: url('./assets/images/code-editor-bg.jpeg');
   background-position: 0%;
   background-size:cover;
   color: $app-primary;
   overflow-x: clip;
   width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.9;
+  }
 }
 
 .App {

@@ -47,4 +47,17 @@
     width: 50px;
     height: 100vh;
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 20px;
+
+    .back-home {
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .sidebar {
+      display: none;
+    }
+  }
 }
