@@ -1,27 +1,28 @@
 import { useState } from "react";
 import Experience from "./Experience/Experience";
 
-import "./MyInfo.scss";
 import Skills from "./Skills/Skills";
+
+import styles from "./MyInfo.module.scss";
 
 const views = [
   {
-    title: "Experience",
-    view: Experience,
-  },
-  {
     title: "Skills",
     view: Skills,
+  },
+  {
+    title: "Experience",
+    view: Experience,
   },
 ];
 
 const MyInfo = () => {
   return (
-    <div className="MyInfo">
-      <div className="Views">
+    <div className={styles.myInfo}>
+      <div className={styles.views}>
         {views.map(({ title, view: View }, index) => (
-          <div key={index} className="View-container">
-            <h3>{title}</h3>
+          <div key={index} className={styles.viewContainer}>
+            <h3 className={styles.viewTitle}>{title}</h3>
             <View key={index} />
           </div>
         ))}

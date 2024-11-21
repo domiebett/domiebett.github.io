@@ -1,3 +1,4 @@
+import { TimelineContent } from "models/experience";
 import { AndelaImage } from "../../../../assets/images";
 import Tech from "../Tech/Tech";
 import "./TimeLineContent.scss";
@@ -15,35 +16,33 @@ const TimeLineContent = ({ content, side }: IProps) => {
       <span className="date">
         // {formatDate(content.startDate)} - {formatDate(content.endDate)}
       </span>
-      <div className="content">
-        <h3 className="title">{content.title} - {content.company}</h3>
-        <p className="description">{content.description}</p>
-        <ul className="skills">
-          {content.skills.map((skill, index) => (
-            <Tech key={index} name={skill} />
-          ))}
-        </ul>
+
+      <h3 className="title">
+        {content.title} - {content.company}
+      </h3>
+
+      <div className="content-container">
+        <div className="company-image">
+          <img src={content.companyImage} alt="" />
+        </div>
+
+        <div className="content">
+          <p className="description">{content.description}</p>
+        </div>
       </div>
-      <div className="company-image">
-        <img src={content.companyImage} alt="" />
-      </div>
+
+      <ul className="skills">
+        {content.skills.map((skill, index) => (
+          <Tech key={index} name={skill} />
+        ))}
+      </ul>
     </div>
   );
 };
 
 export interface IProps {
-  content: IContent;
+  content: TimelineContent;
   side: "left" | "right";
-}
-
-export interface IContent {
-  startDate: Date;
-  endDate: Date;
-  title: string;
-  description: string;
-  skills: string[];
-  company: string;
-  companyImage: any;
 }
 
 export default TimeLineContent;

@@ -1,5 +1,5 @@
-import Intro from "./intro/Intro";
-import MyInfo from "./my-info/MyInfo";
+import Intro from "../intro/Intro";
+import MyInfo from "../my-info/MyInfo";
 
 import './HomePage.scss';
 

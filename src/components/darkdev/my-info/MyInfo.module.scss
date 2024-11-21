@@ -1,0 +1,48 @@
+@import './../../../styles/themes/darkdev/variables.scss';
+
+$view-container-top: 75px;
+$view-border-width: 1px;
+$view-border-radius: 15px;
+
+.myInfo {
+  position: relative;
+  width: 100%;
+  max-width: 43.75rem;
+  float: right;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #0000009d;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-top: 4rem;
+    max-width: 100%;
+    float: none;
+  }
+
+  .views {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+  }
+
+  .viewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .viewTitle {
+    font-size: 1.25rem;
+    display: inline;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 0.25rem;
+      width: 100%;
+      margin-top: 0.25rem;
+      background: $app-gray;
+      border-radius: 0.25rem;
+    }
+  }
+}

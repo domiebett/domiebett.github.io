@@ -1,2 +1,2 @@
 export const description =
-  "With 6 Years of Expertise, Masterfully Crafting Lines of Code into Seamless Digital Experiences";
+  "With 7 years of crafting innovative, scalable, and user-centric software solutions";

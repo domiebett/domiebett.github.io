@@ -1,5 +1,6 @@
+import { TimelineContent } from 'models/experience';
 import './TimeLine.scss';
-import TimeLineContent, { IContent } from './TimeLineContent';
+import TimeLineContent from './TimeLineContent';
 
 const TimeLine = ({ contents }: Props) => (
       <div className={"TimeLine"}>
@@ -7,14 +8,14 @@ const TimeLine = ({ contents }: Props) => (
           <TimeLineContent
             key={index}
             content={content}
-            side={index % 2 === 0 ? 'left' : 'right'}
+            side='right'
           />
         ))}
       </div>
 );
 
 interface Props {
-  contents: IContent[];
+  contents: TimelineContent[];
 }
 
 export default TimeLine;
