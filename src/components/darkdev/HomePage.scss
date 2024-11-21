@@ -1,0 +1,80 @@
+@import "../../styles/themes/darkdev/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $app-secondary;
+  background-image: url('./../../assets/images/code-editor-bg.jpeg');
+  background-position: 0%;
+  background-size:cover;
+  background-attachment: fixed;
+  color: $app-primary;
+  overflow-x: clip;
+  width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.92;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.no-style-button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+.MainComponent {
+  width: 80%;
+  height: 100%;
+  padding: 10%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  min-height: 600px;
+  overflow-x: hidden;
+  padding: 100px;
+  margin: 0 auto;
+  gap: 20px;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .Panel {
+    height: 100%;
+  }
+}
