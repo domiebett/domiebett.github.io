@@ -1,0 +1,10 @@
+@import '../../../../../styles/themes/darkdev/variables.scss';
+
+.Title {
+  width: 100%;
+
+  .name {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: $app-super-xl;
+  }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+@import './elements';
+@import './utils';
+
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  z-index: 1;
+  box-sizing: border-box;
+}

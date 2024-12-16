@@ -1,25 +1,20 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { StrictMode, lazy } from "react";
+import { createRoot } from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { routes } from "./routes";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
-import App from './App';
-import Portfolio from 'components/portfolio/Portfolio';
+import './styles/global.scss';
 
-const rootEl = document.getElementById('root') as Element;
+const rootEl = document.getElementById("root") as Element;
 const root = createRoot(rootEl);
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <App />
-    },
-    {
-        path: '/portfolio',
-        element: <Portfolio />
-    }
-])
+
+const router = createBrowserRouter(routes);
 
 root.render(
-    <StrictMode>
-        <RouterProvider router={router} />
-    </StrictMode>
+  <StrictMode>
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  </StrictMode>
 );

@@ -36,3 +36,9 @@ export const NodeJs = require('./icons/skills/nodejs.png');
 export const Php = require('./icons/skills/php.png');
 export const ReactJs = require('./icons/skills/reactjs.png');
 export const MySQL = require('./icons/skills/mysql.png');
+export const Angular = require('./icons/skills/angular.png');
+export const Typescript = require('./icons/skills/typescript.png');
+
+export const Andela = require('./icons/experiences/andela.png');
+export const Ceros = require('./icons/experiences/ceros.png');
+export const Gantner = require('./icons/experiences/gantner.png');
