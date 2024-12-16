@@ -1,32 +1,25 @@
-import { useState } from "react";
 import Experience from "./Experience/Experience";
 
 import Skills from "./Skills/Skills";
 
 import styles from "./MyInfo.module.scss";
 
-const views = [
-  {
-    title: "Skills",
-    view: Skills,
-  },
-  {
-    title: "Experience",
-    view: Experience,
-  },
-];
-
 const MyInfo = () => {
   return (
     <div className={styles.myInfo}>
+      {/* <button className={`${styles.scrollButton} top`}>Up</button> */}
       <div className={styles.views}>
-        {views.map(({ title, view: View }, index) => (
-          <div key={index} className={styles.viewContainer}>
-            <h3 className={styles.viewTitle}>{title}</h3>
-            <View key={index} />
-          </div>
-        ))}
+        <section className={styles.viewContainer}>
+          <h3 className={styles.viewTitle}>Skills</h3>
+          <Skills />
+        </section>
+
+        <section className={styles.viewContainer}>
+          <h3 className={styles.viewTitle}>Experience</h3>
+          <Experience />
+        </section>
       </div>
+      {/* <button className={`${styles.scrollButton} bottom`}>Down</button> */}
     </div>
   );
 };

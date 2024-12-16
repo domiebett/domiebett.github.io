@@ -11,7 +11,8 @@ $view-border-radius: 15px;
   float: right;
   margin: 0 auto;
   height: 100%;
-  background-color: #0000009d;
+  background-color: $background;
+  box-sizing: content-box;
 
   @media (max-width: $tablet-breakpoint) {
     margin-top: 4rem;
@@ -43,6 +44,20 @@ $view-border-radius: 15px;
       margin-top: 0.25rem;
       background: $app-gray;
       border-radius: 0.25rem;
+    }
+  }
+
+  .scrollButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &.top {
+      top: 0;
+    }
+
+    &.bottom {
+      bottom: 0;
     }
   }
 }

@@ -6,6 +6,7 @@ export interface TimelineContent {
   skills: string[];
   company: string;
   companyImage: any;
+  website: string;
 }
 
 export interface TimelineExperience extends TimelineContent {}

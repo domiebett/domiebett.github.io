@@ -1,5 +1,4 @@
 import { TimelineContent } from "models/experience";
-import { AndelaImage } from "../../../../assets/images";
 import Tech from "../Tech/Tech";
 import "./TimeLineContent.scss";
 
@@ -22,9 +21,9 @@ const TimeLineContent = ({ content, side }: IProps) => {
       </h3>
 
       <div className="content-container">
-        <div className="company-image">
+        <a href={content.website} target="_blank" rel="noopener noreferrer" className="company-image">
           <img src={content.companyImage} alt="" />
-        </div>
+        </a>
 
         <div className="content">
           <p className="description">{content.description}</p>

@@ -1,9 +1,9 @@
+import { aboutMe } from 'temp/data/aboutMe';
 import './Description.scss';
-import { description } from '../../../../../temp/data/description';
 
 const Description = () => (
     <div className="Description">
-        <p>{description}</p>
+        <p>{aboutMe.description}</p>
     </div>
 )
 

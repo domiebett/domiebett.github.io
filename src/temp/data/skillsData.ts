@@ -1,4 +1,5 @@
 import {
+  Angular,
   Aws,
   Docker,
   Javascript,
@@ -7,6 +8,7 @@ import {
   NodeJs,
   Php,
   ReactJs,
+  Typescript,
 } from '../../assets/icons';
 
 export const skillsData = [
@@ -15,20 +17,20 @@ export const skillsData = [
     logo: Javascript,
   },
   {
+    name: 'Typescript',
+    logo: Typescript,
+  },
+  {
     name: 'React JS',
     logo: ReactJs,
   },
   {
+    name: 'Angular',
+    logo: Angular,
+  },
+  {
     name: 'Node JS',
     logo: NodeJs,
-  },
-  {
-    name: 'Php',
-    logo: Php,
-  },
-  {
-    name: 'Laravel',
-    logo: Laravel,
   },
   {
     name: 'Aws',
