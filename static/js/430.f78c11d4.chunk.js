@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdomiebett_github_io=self.webpackChunkdomiebett_github_io||[]).push([[430],{430:function(e,i,t){t.r(i);var u=t(184);i.default=function(){return(0,u.jsx)("div",{children:"AdminPage Page"})}}}]);
+//# sourceMappingURL=430.f78c11d4.chunk.js.map

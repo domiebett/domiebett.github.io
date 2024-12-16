@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/430.f78c11d4.chunk.js","mappings":"kJAIA,UAJkB,WAChB,OAAOA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,kBACd,C","sources":["pages/AdminPage.tsx"],"sourcesContent":["const AdminPage = () => {\n  return <div>AdminPage Page</div>\n}\n\nexport default AdminPage;\n"],"names":["_jsx","children"],"sourceRoot":""}
