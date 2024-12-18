@@ -1,0 +1,100 @@
+@import "../../../styles/themes/darkdev/variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  // font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $app-secondary;
+  // background-image: url('./../../assets/images/code-editor-bg.jpeg');
+  background-position: 0%;
+  background-size:cover;
+  background-attachment: fixed;
+  color: $app-primary;
+  overflow-x: clip;
+  width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.92;
+  }
+}
+
+.Portfolio {
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .projects {
+    margin-top: 3em;
+  }
+
+  .back-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    margin-top: -2em;
+    height: 20px;
+
+    img {
+      height: 100%;
+    }
+    a {
+      @extend .app-link;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      text-decoration-line: none;
+
+      .underline {
+        text-decoration: dashed;
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .sidebar {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    width: 50px;
+    height: 100vh;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 20px;
+
+    .back-home {
+      position: relative;
+      margin-top: 10px;
+
+      a {
+        color: $code-green;
+      }
+    }
+
+    .sidebar {
+      display: none;
+    }
+  }
+}

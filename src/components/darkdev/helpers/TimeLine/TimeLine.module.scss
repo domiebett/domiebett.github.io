@@ -1,0 +1,20 @@
+@import "./../../../../styles/themes/darkdev/variables.scss";
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3.5rem;
+  width: 100%;
+  font-size: $app-normal;
+  height: 100%;
+  font-size: $app-m;
+  padding: 0;
+  margin: 0;
+
+  .timelineItem {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -8,7 +8,18 @@
   margin: 0;
   user-select: none;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
-  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  // font-family: 'Fira Code', 'Courier New', Courier, monospace;
   z-index: 1;
   box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.unstyled-button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
 }

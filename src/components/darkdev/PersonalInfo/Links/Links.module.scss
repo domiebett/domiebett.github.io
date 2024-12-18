@@ -1,0 +1,12 @@
+@import "./../../../../styles/themes/darkdev/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  a {
+    @extend .app-link;
+  }
+}

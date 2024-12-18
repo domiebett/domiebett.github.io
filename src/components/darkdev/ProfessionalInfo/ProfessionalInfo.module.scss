@@ -1,0 +1,32 @@
+@import './../../../styles/themes/darkdev/variables.scss';
+
+$view-container-top: 75px;
+$view-border-width: 1px;
+$view-border-radius: 15px;
+
+.views {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+
+  .viewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  .viewTitle {
+    font-size: 1.25rem;
+    display: inline;
+  
+    &::after {
+      content: '';
+      display: block;
+      height: 0.25rem;
+      width: 100%;
+      margin-top: 0.25rem;
+      background: $app-gray;
+      border-radius: 0.25rem;
+    }
+  }
+}

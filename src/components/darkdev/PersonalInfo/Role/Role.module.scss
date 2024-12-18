@@ -1,0 +1,9 @@
+@import "./../../../../styles/themes/darkdev/variables.scss";
+
+.role {
+  font-size: $app-xxxl;
+
+  .dynamic {
+    color: $code-green;
+  }
+}

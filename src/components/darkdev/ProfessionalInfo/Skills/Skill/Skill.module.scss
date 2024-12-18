@@ -1,0 +1,28 @@
+@import '../../../../../styles/themes/darkdev/variables.scss';
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+
+  .imageContainer {
+    $imageDimensions: 5rem;
+    width: $imageDimensions;
+    height: $imageDimensions;
+    min-width: $imageDimensions;
+    min-height: $imageDimensions;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .name {
+    text-align: center;
+    font-size: $app-s;
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../../styles/themes/darkdev/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+body {
+  background-color: $app-secondary;
+  color: $app-primary;
+  overflow-x: clip;
+  width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.92;
+  }
+}
+
+.appContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  min-height: 600px;
+  padding: 6.25rem;
+  margin: 0 auto;
+  gap: 2rem;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.25rem;
+    gap: 4rem;
+  }
+
+  .personalInfo {
+    position: fixed;
+    top: 100px;
+    width: 425px;
+    height: 100%;
+
+    @media (max-width: $tablet-breakpoint) {
+      position: relative;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .professionalInfo {
+    position: relative;
+    width: 100%;
+  }
+}

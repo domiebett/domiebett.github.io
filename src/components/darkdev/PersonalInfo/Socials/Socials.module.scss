@@ -1,0 +1,22 @@
+.icons {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+
+  &.horizontal {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1.875rem;
+  }
+  
+  &.vertical {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.875rem;
+    padding-bottom: 1rem;
+  }
+
+   .icon {
+    list-style-type: none;
+   }
+}

@@ -2,9 +2,9 @@ import { lazy } from "react";
 import { useTheme } from "../contexts/ThemeContext";
 import SuspenseLoader from "components/ui/suspense-loader/SuspenseLoader";
 
-const DarkDevHomePage = lazy(() => import("../components/darkdev/homepage/HomePage"));
+const DarkDevHomePage = lazy(() => import("./themes/darkdev/HomePage"));
 const CleanModernHomePage = lazy(
-  () => import("../components/cleanmodern/HomePage")
+  () => import("./themes/cleanmodern/HomePage")
 );
 
 const HomePage = () => {

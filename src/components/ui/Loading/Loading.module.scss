@@ -1,0 +1,38 @@
+@import "../../../styles/themes/darkdev/variables.scss";
+
+.loadingContainer {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: $app-secondary;
+  color: $app-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .loaderIcon {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    min-width: 3rem;
+    min-height: 3rem;
+    border-width: 0.2rem;
+    border-color: $app-primary $app-primary transparent transparent;
+    border-style: solid;
+    animation: rotate 2s linear infinite;
+  }
+
+  .loadingText {
+    color: $app-primary;
+    font-size: 1rem;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
