@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdomiebett_github_io=self.webpackChunkdomiebett_github_io||[]).push([[993],{2993:function(e,i,t){t.r(i);var n=t(184);i.default=function(){return(0,n.jsx)("div",{children:"The clean modern theme is still a Work in Progress."})}}}]);
+//# sourceMappingURL=993.2492fd8b.chunk.js.map
