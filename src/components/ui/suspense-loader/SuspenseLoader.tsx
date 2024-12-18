@@ -1,8 +1,9 @@
 import { PropsWithChildren, Suspense } from "react"
+import Loading from "../Loading/Loading";
 
 const SuspenseLoader = ({children}: PropsWithChildren) => {
   return (
-    <Suspense fallback={<div className="flex-centered">Loading Page...</div>}>
+    <Suspense fallback={<Loading></Loading>}>
       {children}
     </Suspense>
   )

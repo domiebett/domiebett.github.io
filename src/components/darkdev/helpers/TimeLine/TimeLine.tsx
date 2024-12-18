@@ -1,17 +1,16 @@
-import { TimelineContent } from 'models/experience';
-import './TimeLine.scss';
-import TimeLineContent from './TimeLineContent';
+import { TimelineContent } from "models/experience";
+import TimeLineContent from "./TimelineContent/TimeLineContent";
+
+import styles from "./TimeLine.module.scss";
 
 const TimeLine = ({ contents }: Props) => (
-      <div className={"TimeLine"}>
-        {contents.map((content, index) => (
-          <TimeLineContent
-            key={index}
-            content={content}
-            side='right'
-          />
-        ))}
-      </div>
+  <ul className={styles.timeline}>
+    {contents.map((content, index) => (
+      <li className={styles.timelineItem} key={index}>
+        <TimeLineContent content={content} />
+      </li>
+    ))}
+  </ul>
 );
 
 interface Props {

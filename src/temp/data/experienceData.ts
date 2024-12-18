@@ -1,7 +1,7 @@
-import { TimelineExperience } from "models/experience";
+import { IExperience } from "models/experience";
 import { Andela, Ceros, Gantner } from "assets/icons";
 
-export const experiences: TimelineExperience[] = [
+export const experiences: IExperience[] = [
   {
     startDate: new Date(2017, 5),
     endDate: new Date(2018, 9),
@@ -10,8 +10,8 @@ export const experiences: TimelineExperience[] = [
     description:
       "As part of a dynamic team at Andela, we engineered Lenken, an impactful learning management system. Lenken propels personalized professional growth through inventive design and technical excellence.",
     skills: ["Javascript", "Php", "Angular", "Laravel"],
-    companyImage: Andela,
-    website: 'https://andela.com'
+    image: Andela,
+    link: 'https://andela.com'
   },
   {
     startDate: new Date(2020, 1),
@@ -28,8 +28,8 @@ export const experiences: TimelineExperience[] = [
       "Jenkins",
       "Digital Ocean",
     ],
-    companyImage: Ceros,
-    website: 'https://ceros.com'
+    image: Ceros,
+    link: 'https://ceros.com'
   },
   {
     startDate: new Date(2018, 10),
@@ -39,8 +39,8 @@ export const experiences: TimelineExperience[] = [
     description:
       "Enhanced Ceros Studio’s usability by integrating CKEditor5, adding advanced text editing features and spellchecking. Collaborated with the editor team to develop functionality that improved content editability, creating a more seamless experience for designers.",
     skills: ["Javascript", "React", "Backbone", "Php", "AWS", "Docker", "HTMLCanvas"],
-    companyImage: Ceros,
-    website: 'https://ceros.com'
+    image: Ceros,
+    link: 'https://ceros.com'
   },
   {
     startDate: new Date(2023, 11),
@@ -50,7 +50,7 @@ export const experiences: TimelineExperience[] = [
     description:
       "Independently developed the frontend of Dawamy, a time management and attendance tracking system, improving performance, accessibility, user experience, and interface design to deliver a seamless and efficient solution.",
     skills: ["Javascript", "Angular", "ASP.NET", "SQL Server", "Figma"],
-    companyImage: Gantner,
-    website: 'https://gantner.com',
+    image: Gantner,
+    link: 'https://gantner.com',
   }
 ];

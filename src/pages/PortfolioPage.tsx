@@ -3,7 +3,7 @@ import { useTheme } from "contexts/ThemeContext";
 import { lazy, Suspense } from "react";
 
 const DarkDevPortFolioPage = lazy(
-  () => import("../components/darkdev/portfolio/Portfolio")
+  () => import("../components/darkdev/MyProjects/Portfolio")
 );
 
 const PortforlioPage = () => {

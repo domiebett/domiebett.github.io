@@ -1,0 +1,24 @@
+@import '../../../styles/themes/darkdev/variables.scss';
+
+.container {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  @media (max-width: $tablet-breakpoint) {
+    height: auto;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+
+    @media (max-width: $tablet-breakpoint) {
+      position: relative;
+      margin-top: 2rem;
+    }
+  }
+}

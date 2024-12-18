@@ -38,6 +38,7 @@ $mobile-breakpoint: 600px;
 $button-border-color: $app-primary;
 $button-text: $app-primary;
 $button-border-width: 2px;
+
 .button {
   color: $button-text;
   cursor: pointer;
@@ -55,14 +56,6 @@ $button-border-width: 2px;
     color: $app-secondary;
     background-color: $app-primary;
   }
-}
-.no-style-button {
-  @extend .button;
-  padding: 0;
-  margin: 0;
-  background: none;
-  border: none;
-  text-decoration: none;
 }
 
 // links

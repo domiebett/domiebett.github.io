@@ -1,0 +1,11 @@
+@import './../../../../styles/themes/darkdev/variables.scss';
+
+$timeline-offset: 15%;
+$content-container-width: 60%;
+
+.experiences {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: $app-normal;
+}
