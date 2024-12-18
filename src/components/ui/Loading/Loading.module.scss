@@ -6,8 +6,8 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: $app-secondary;
-  color: $app-primary;
+  background-color: $bg-primary;
+  color: $txt-primary;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,13 +21,13 @@
     min-width: 3rem;
     min-height: 3rem;
     border-width: 0.2rem;
-    border-color: $app-primary $app-primary transparent transparent;
+    border-color: $txt-primary $txt-primary transparent transparent;
     border-style: solid;
     animation: rotate 2s linear infinite;
   }
 
   .loadingText {
-    color: $app-primary;
+    color: $txt-primary;
     font-size: 1rem;
   }
 

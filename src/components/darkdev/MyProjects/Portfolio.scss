@@ -11,12 +11,12 @@
 }
 
 body {
-  background-color: $app-secondary;
+  background-color: $bg-primary;
   // background-image: url('./../../assets/images/code-editor-bg.jpeg');
   background-position: 0%;
   background-size:cover;
   background-attachment: fixed;
-  color: $app-primary;
+  color: $txt-primary;
   overflow-x: clip;
   width: 100%;
 
@@ -57,7 +57,7 @@ body {
       height: 100%;
     }
     a {
-      @extend .app-link;
+      @include app-link;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -89,7 +89,7 @@ body {
       margin-top: 10px;
 
       a {
-        color: $code-green;
+        color: $app-green;
       }
     }
 

@@ -1,4 +1,4 @@
-import SocialIcon from "../../helpers/SocialIcon/SocialIcon";
+import SocialIcon from "../../ui/SocialIcon/SocialIcon";
 import { socialIcons } from "../../../../temp/data/socials";
 
 import styles from "./Socials.module.scss";

@@ -2,7 +2,7 @@ import "./ProjectsTable.scss";
 import { IColumn, Project, projectsData as projects } from "../../../../temp/data/projectsData";
 import { projectColumns as columns } from "../../../../temp/data/projectsData";
 import { Link } from "react-router-dom";
-import TimelineSkills from "components/darkdev/helpers/SkillsList/SkillsList";
+import TimelineSkills from "components/darkdev/ui/SkillsList/SkillsList";
 
 const ProjectsTable = () => {
   return (

@@ -1,4 +1,4 @@
-import TimeLine from '../../helpers/TimeLine/TimeLine';
+import TimeLine from '../../ui/TimeLine/TimeLine';
 import { experiences as myExperiences } from '../../../../temp/data/experienceData';
 import { useEffect, useState } from 'react';
 import { IExperience } from 'models/experience';
