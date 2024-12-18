@@ -23,12 +23,12 @@ $table-border-width: 1px;
         color: $app-gray;
 
         &.project {
-          color: $app-primary;
+          color: $txt-primary;
         }
 
         &.link {
           a {
-            @extend .app-link;
+            @include app-link;
             display: flex;
             flex-direction: row;
             text-decoration-line: none;

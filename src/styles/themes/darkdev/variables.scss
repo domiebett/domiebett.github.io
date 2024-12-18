@@ -1,14 +1,17 @@
-$background: #000;
+$bg-primary: #000; // background primary
+$bg-secondary: #313131; // background secondary
+$txt-primary: #cdcdcd;
+$txt-secondary: #919191;
 $app-primary: #fff;
 $app-secondary: #000;
 $app-tertiary: #313131;
 $app-gray: #919191;
-$code-blue: #5379a8;
-$code-green: #5b9a8b;
-$code-yellow: #f7e987;
+$app-blue: #5379a8;
+$app-green: #5b9a8b;
+$app-yellow: #f7e987;
 
 // text
-$text-color: $app-primary;
+$text-color: $txt-primary;
 
 // transitions
 $fast-transition: 0.2s;
@@ -18,57 +21,59 @@ $fast-transition: all $fast-transition ease-in-out;
 $fast-opacity-transition: opacity $fast-transition ease-in-out;
 
 // sizes
-$app-xxxs: 0.5em;
-$app-xxs: 0.6em;
-$app-xs: 0.7em;
-$app-s: 0.8em;
-$app-m: 0.9em;
-$app-normal: 1em;
-$app-xl: 1.2em;
-$app-xxl: 1.5em;
-$app-xxxl: 1.7em;
-$app-xxxxl: 2em;
-$app-super-xl: 3em;
+$app-xxxs: 0.5rem;
+$app-xxs: 0.6rem;
+$app-xs: 0.7rem;
+$app-s: 0.8rem;
+$app-m: 0.9rem;
+$app-normal: 1rem;
+$app-l: 1.1rem;
+$app-xl: 1.2rem;
+$app-xxl: 1.5rem;
+$app-xxxl: 1.7rem;
+$app-xxxxl: 2rem;
+$app-super-xl: 3rem;
 
 // breakpoints
 $tablet-breakpoint: 1100px;
 $mobile-breakpoint: 600px;
 
-// buttons
-$button-border-color: $app-primary;
-$button-text: $app-primary;
-$button-border-width: 2px;
+$fixed-panel-width: 400px;
 
-.button {
-  color: $button-text;
-  cursor: pointer;
+@mixin btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  text-decoration: none;
+  width: max-content;
 }
-.app-button {
-  @extend .button;
-  border-width: $button-border-width;
-  border-color: $button-border-color;
-  border-style: solid;
-}
-.app-button-hover {
-  @extend .app-button;
 
+@mixin btn-primary {
+  @include btn;
+  border: 0.0625rem solid $app-green;
+  color: $app-green;
+  background-color: $bg-primary;
+  
   &:hover {
-    color: $app-secondary;
-    background-color: $app-primary;
+    color: $txt-primary;
+    background-color: rgba($app-green, 0.8);
   }
 }
 
 // links
-.app-link {
+@mixin app-link {
   display: inline-block;
   width: 150px;
-  color: $app-primary;
+  color: $txt-primary;
   text-decoration-style: dashed;
   text-decoration-line: underline;
-  text-decoration-color: $app-primary;
+  text-decoration-color: $txt-primary;
 
   &:hover {
-    color: $code-green;
-    text-decoration-color: $code-green;
+    color: $app-green;
+    text-decoration-color: $app-green;
   }
 }

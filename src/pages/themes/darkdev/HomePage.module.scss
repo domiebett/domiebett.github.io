@@ -2,28 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway');
 
 body {
-  background-color: $app-secondary;
-  color: $app-primary;
+  background-color: $bg-primary;
+  color: $txt-primary;
   overflow-x: clip;
   width: 100%;
-
-  &::after {
-    content: '';
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    opacity: 0.92;
-  }
 }
 
 .appContainer {
   position: relative;
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: $fixed-panel-width 1fr;
   box-sizing: border-box;
   width: 100%;
   max-width: 1500px;
@@ -45,7 +33,7 @@ body {
   .personalInfo {
     position: fixed;
     top: 100px;
-    width: 425px;
+    width: $fixed-panel-width;
     height: 100%;
 
     @media (max-width: $tablet-breakpoint) {

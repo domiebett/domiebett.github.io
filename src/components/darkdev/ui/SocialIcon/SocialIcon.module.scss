@@ -1,0 +1,19 @@
+@import "./../../../../styles/themes/darkdev/variables.scss";
+
+$icon-dimension: $app-xxl;
+
+.socialIcon {
+    display: block;
+    height: $icon-dimension;
+    width: $icon-dimension;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+    
+    img {
+        width: 100%;
+        opacity: 0.8;
+    }
+}
