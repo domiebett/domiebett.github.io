@@ -44,7 +44,7 @@ export const experiences: IExperience[] = [
   },
   {
     startDate: new Date(2023, 11),
-    endDate: new Date(2024, 11),
+    endDate: new Date(2024, 9),
     title: "Frontend Software Engineer",
     company: "Gantner",
     description:
